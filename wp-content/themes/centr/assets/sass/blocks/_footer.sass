@@ -1,0 +1,67 @@
+.footer
+    background: linear-gradient(0deg, #F8E8FD -18.86%, #E9E6F3 124.37%, #FFF 231.14%)
+    position: relative
+    &__top 
+        padding: 75px 0px 30px
+    &__copy
+        padding: 11px 0px
+        .container  
+            display: flex
+            align-items: center
+            justify-content: space-between
+    &__right 
+        display: flex
+        align-items: center
+        align-items: flex-start
+    &__time 
+        display: flex
+        align-items: flex-start
+        margin-right: 85px
+        img 
+            margin-right: 15px
+            min-width: 25px
+            max-width: 25px
+        span 
+            display: block
+            margin-bottom: 10px
+    &__main 
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__data
+        border-top: 1px solid rgba(0, 0, 0, 0.20)
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20)
+        padding: 20px 0px
+        .container
+            display: flex
+            align-items: center
+            justify-content: center
+        &-item 
+            margin-right: 50px
+            display: flex
+            align-items: center
+            span 
+                margin-right: 10px
+            &:last-child
+                margin-right: 0 !important
+    &__list 
+        padding-bottom: 100px
+        &-block
+            display: grid
+            grid-template: auto / repeat(3, 1fr)
+            gap: 10px
+    &__title 
+        margin-bottom: 80px
+    & > * 
+        position: relative
+        z-index: 1
+    &__cloud 
+        position: absolute
+        z-index: 0
+        min-width: 1920px
+        max-width: 1920px
+        width: 1920px
+        max-height: unset
+        left: 50%
+        transform: translate(-50%, -45%)
+        top: 0

@@ -1,0 +1,45 @@
+.header
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.50) 24.48%, rgba(255, 255, 255, 0.50) 77.6%, rgba(255, 255, 255, 0.00) 100%)
+    backdrop-filter: blur(10px)
+    padding: 12px 0px
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 10
+    .container 
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo 
+        letter-spacing: 1.8px
+        display: flex
+        align-items: flex-end
+        margin-right: 5px
+        img 
+            width: 66px
+            margin-right: 16px
+    &__right 
+        display: flex
+        align-items: center
+    &__map, &__phone 
+        display: flex
+        align-items: flex-start
+        img 
+            margin-right: 15px
+            max-width: 32px
+            min-width: 32px
+    &__map 
+        margin-right: 85px
+        img 
+            filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.10))
+    &__phone 
+        a 
+            display: block
+        span 
+            color: rgba(151, 71, 255, 0.80)
+            padding-bottom: 5px
+            border-bottom: 1px dashed #9747FF
+    &__button 
+        width: 270px
+        margin-left: 170px

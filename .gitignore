@@ -1,0 +1,8 @@
+*.rar
+.idea
+wp-content/uploads
+wp-content/cache
+node_modules
+package-lock.json
+
+!wp-content/uploads/wpcf7_uploads/*
