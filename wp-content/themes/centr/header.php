@@ -16,7 +16,7 @@
         <div class="container">
             <a href="/" class="header__logo text_fz18 text_fw700 text_ffAmat">
                 <img src="<?=$imgPath?>logo.png" alt="<?php bloginfo('name'); ?>">
-                <span>Детский ДОСУГОВЫЙ <br>центр</span>
+                <span>Детский ДОСУГОВЫЙ центр</span>
             </a>
             <div class="header__right">
                 <div class="header__map text_fw500">

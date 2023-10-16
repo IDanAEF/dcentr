@@ -10,8 +10,8 @@ const other = () => {
                 transit = 0;
 
             for (let i = 0; i < textCont.length; i++) {
-                newInner += `<i class="or" style="transition: 0.6s all ${transit.toFixed(2)}s">${textCont[i]}</i>`;
-                transit += 0.04;
+                newInner += `<i class="or" style="transition: 0.4s all ${transit.toFixed(2)}s">${textCont[i]}</i>`;
+                transit += 0.03;
             }
             item.innerHTML = newInner;
         });

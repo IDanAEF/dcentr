@@ -54,6 +54,9 @@ input
     padding: 20px
     background: #FAFAFA
     width: 100%
+    outline: none
+    &.focus
+        border: 2px solid #f6a0b0
 ul 
     list-style-type: none
     li 
@@ -71,7 +74,50 @@ ul
             height: 15px
             border-radius: 100%
             background: #C3566B
+.elem
+    &_animate 
+        transition: 0.5s all
+        transform: rotateX(90deg)
+        &.anim
+            transform: rotateX(00deg)
+        &.left, &.right, &.top, &.bott
+            transition: 0.7s all
+            opacity: 0
+            &.anim 
+                opacity: 1
+        &.top
+            transform: translateY(60px)
+            &.anim
+                transform: translateY(0px)
+        &.bott
+            transform: translateY(-60px)
+            &.anim
+                transform: translateY(0px)
+        &.right
+            transform: translateX(-60px)
+            &.anim
+                transform: translateX(0px)
+        &.left
+            transform: translateX(60px)
+            &.anim
+                transform: translateX(0px)
+        &.custom 
+            transform: none
+            &.anim 
+                transform: none
 .text 
+    &_animate
+        position: relative
+        .or
+            position: relative
+            display: inline
+            opacity: 0
+            bottom: -14px
+            font-style: inherit
+        &.anim
+            .or
+                opacity: 1
+                bottom: 0px
     &_normal
         font-style: normal
     &_italic

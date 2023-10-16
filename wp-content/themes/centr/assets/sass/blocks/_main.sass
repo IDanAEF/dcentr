@@ -7,12 +7,18 @@
         .cube1, .cube2
             position: absolute
             z-index: 6
+            animation: d
         .cube1
-            left: 14px
+            // left: 14px
+            right: 78%
             top: 320px
+            animation: fade 3s forwards, top-to-bott 2s infinite alternate ease-in-out
         .cube2
-            right: -115px
-            bottom: 270px
+            // right: -115px
+            left: 78%
+            // bottom: 270px
+            top: 25vw
+            animation: fade 1s forwards, top-to-bott 3s infinite alternate ease-in-out
         &-dop
             position: absolute
             z-index: 5
@@ -30,6 +36,7 @@
             border-radius: 20px
             background: #FFF
             width: 430px
+            opacity: 0
             .owl 
                 position: absolute
                 z-index: -1
@@ -38,6 +45,12 @@
                 max-width: unset
                 bottom: 90%
                 right: -110px
+                opacity: 0
+                transition: 0.5s opacity 0.5s
+            &.anim
+                opacity: 1
+                .owl 
+                    opacity: 1
             .dot 
                 position: absolute
                 width: 41px
@@ -52,6 +65,7 @@
                     transform: rotate(180deg)
         &-medal 
             position: relative
+            opacity: 0
             display: flex
             align-items: flex-end
             border-radius: 20px
@@ -68,6 +82,12 @@
                 width: 198px
                 max-height: unset
                 max-width: unset
+                opacity: 0
+                transition: 0.5s opacity 0.5s
+            &.anim
+                opacity: 1
+                .owl
+                    opacity: 1
             .medal 
                 position: absolute
                 max-height: unset
@@ -97,6 +117,8 @@
                 max-height: unset
                 position: relative
                 z-index: 0
+            .boy, .girl
+                transition: .7s all 1s !important
             .girl 
                 margin-right: 320px
             .cloud
@@ -106,15 +128,20 @@
                 bottom: 0
                 width: 1917px
                 transform: translate(-50%, 50%)
+                animation: side-to-side 7s ease-in-out infinite alternate
+            .cloud2
+                opacity: 0.4
+                animation: side-to-side-rev 7s ease-in-out infinite alternate
         &-items 
             position: absolute
             z-index: 1
             left: 50%
-            transform: translateX(-50%)
+            transform: translateX(-50%) scale(0.3)
             top: 0
             max-width: unset
             max-height: unset
             width: 1884px
+            animation: big-scale-items 2s ease-in-out forwards
         &-side 
             padding-top: 25px
             position: relative
@@ -131,22 +158,30 @@
             display: flex
             align-items: center
             flex-direction: column
+            .mobile 
+                display: none
             .light, .white 
                 max-width: unset
                 max-height: unset
                 position: absolute
                 top: 0
+                transform: translateY(90px) scale(0.7)
             .light 
                 width: 1671px
                 top: 100px
+                animation: fadeTop 1.5s ease-in-out forwards
             .white 
                 width: 1089px
                 top: 250px
+                animation: 1.5s fadeTop 0.7s ease-in-out forwards
         &-title 
             width: 710px
             max-width: unset
             max-height: unset
             margin-bottom: 75px
+            transition: .5s all 1.5s
+            &.mobile 
+                display: none
         &-text 
             width: 460px
             position: relative
@@ -155,14 +190,17 @@
                 width: 82px
                 bottom: 0
                 right: -10px
+                transition: .5s all 1.5s !important
             span 
                 letter-spacing: 0.9px
                 display: block
                 margin-bottom: 35px
+                transition: .7s all 1.5s !important
             b 
                 color: #C3566B
             button, .button 
                 margin: 50px auto 0px 
+                transition: .7s all 1.5s !important
     &__rucovod
         position: relative
         z-index: 1
@@ -220,7 +258,8 @@
                     margin: 0 auto
         &-back 
             position: absolute
-            width: 100%
+            width: 1920px
+            max-width: unset
             max-height: unset
             z-index: 0
             left: 50%
@@ -288,6 +327,8 @@
             flex-direction: column
             margin-right: 30px
             flex: 1
+            h2 
+                max-width: 405px
             img 
                 width: 115px
                 margin-left: auto

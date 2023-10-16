@@ -6,10 +6,10 @@
         <div class="footer__top">
             <div class="container">
                 <div class="footer__list">
-                    <h2 class="footer__title text_fz80 text_fw700 text_ffAmat text_black">
+                    <h2 class="footer__title text_fz80 text_fw700 text_ffAmat text_black text_animate">
                         Документы и положения
                     </h2>
-                    <div class="footer__list-block text_fz18 text_fw500">
+                    <div class="footer__list-block text_fz18 text_fw500 elem_animate bott">
                         <ul>
                             <li><a href="">Договор оказания образовательных услуг</a></li>
                             <li><a href="">О порядке перевода, отчисленияи восстановления обучающихся</a></li>
@@ -32,7 +32,7 @@
                 <div class="footer__main">
                     <a href="/" class="header__logo text_fz18 text_fw700 text_ffAmat">
                         <img src="<?=$imgPath?>logo.png" alt="<?php bloginfo('name'); ?>">
-                        <span>Детский ДОСУГОВЫЙ <br>центр</span>
+                        <span>Детский ДОСУГОВЫЙ центр</span>
                     </a>
                     <div class="footer__right">
                         <div class="footer__time">
