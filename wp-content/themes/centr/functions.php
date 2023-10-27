@@ -38,3 +38,52 @@
             return $buffer;
         });
     });
+
+    function feedback(){
+        $names = [
+            'feedname' => 'Имя',
+            'feedphone' => 'Номер телефона',
+            'feedage' => 'Возраст ребёнка',
+            'feedhobby' => 'Вид деятельности'
+        ];
+
+        $meta = [];
+        $text = "";
+
+        foreach($_POST as $name => $value) {
+            $meta[$name] = $value;
+            $text .= $names[$name].': '.$value.";\n";
+        } 
+
+        $post_data = [
+            'post_title'    => 'Сообщение от '.$_POST['feedname'],
+            'post_status'   => 'publish',
+            'post_type'     => 'feedback',
+            'post_author'   => 1,
+            'ping_status'   => 'open',
+            'meta_input'    => $meta,
+        ];
+        $post_id = wp_insert_post($post_data);
+
+
+        $to = get_option('admin_email');
+        $from = get_option('admin_email');
+        $subject = get_bloginfo('name').": Новое сообщение с формы связи.";
+        $message = "
+            У вас новое сообщение с формы обратной связи.
+
+            ".$text."
+        ";
+
+        $mailheaders = "MIME-Version: 1.0\r\n";
+        $mailheaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        $mailheaders .= "X-Mailer: PHP/".phpversion()."\r\n";
+        $mailheaders .= "From: ".$from."\r\n";
+        $mailheaders .= "Reply-To: ".get_option('admin_email')."\r\n";
+
+        $rsf = wp_mail($to,$subject,$message,$mailheaders);
+
+        die();
+    }
+    add_action('wp_ajax_feedback', 'feedback');
+    add_action('wp_ajax_nopriv_feedback', 'feedback');

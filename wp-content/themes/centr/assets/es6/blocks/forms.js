@@ -1,4 +1,13 @@
 const forms = () => {
+    async function postData(url, data) {
+        let res = await fetch(url, {
+            method: "POST",
+            body: data
+        });
+
+        return await res.text();
+    }
+
     try {
         //checkbox
         const checkField = document.querySelectorAll('.checkbox');
@@ -29,6 +38,23 @@ const forms = () => {
                 });
                 input.addEventListener('blur', () => {
                     input.classList.remove('focus');
+                });
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const formData = new FormData(form);
+
+                postData(form.action, formData)
+                .then((res) => {
+                    const succesField = form.querySelector('.success');
+
+                    if (succesField) succesField.style.display = 'block';
+
+                    setTimeout(() => {
+                        succesField.style.display = '';
+                    }, 4000);
                 });
             });
         });

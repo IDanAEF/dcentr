@@ -1,0 +1,80 @@
+.works
+    &__promo 
+        .main__promo
+            &-title.title
+                &82
+                    width: 200px
+                &84
+                    width: 691px
+                &86 
+                    width: 294px
+                &88
+                    width: 508px
+                &90
+                    width: 573px
+                &92
+                    width: 230px
+            &-images.images 
+                &82
+                    .girl
+                        margin-right: 0
+                        width: 1920px
+                &84
+                    .girl
+                        margin-right: 83px
+                &86 
+                    .girl
+                        margin-right: 0
+                        margin-left: 100px
+                &88
+                    .girl 
+                        margin-right: 0
+                        margin-left: 300px
+                &92
+                    top: 506px
+    &__simpletext
+        border-radius: 20px
+        border: 2px dashed #000
+        padding: 30px 20px
+        max-width: 710px
+        margin-bottom: 15px
+    &__content 
+        position: relative
+        z-index: 2
+        margin-bottom: 150px
+        &-title 
+            margin: 14px 0px 20px
+            max-width: 1015px
+        &-undertitle 
+            margin-bottom: 70px
+            span 
+                background: #F6A0B0
+                padding: 0px 10px
+    &__points 
+        &-row 
+            margin-bottom: 50px
+            display: flex
+            .works__points-item
+                margin-right: 50px
+                &:last-child
+                    margin-right: 0 !important
+            &:nth-child(2n)
+                justify-content: flex-end
+            &:last-child
+                margin-bottom: 0 !important
+        &-item 
+            width: 580px
+            display: flex
+            align-items: center
+            border-radius: 20px
+            border: 2px dashed #000
+            padding: 30px 20px
+            i 
+                color: #C3566B
+                margin-right: 10px
+        &.cols 
+            display: grid
+            grid-template: auto / repeat(4, 1fr)
+            gap: 30px
+            .works__points-item
+                width: auto

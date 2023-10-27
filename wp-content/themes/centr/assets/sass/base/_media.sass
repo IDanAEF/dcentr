@@ -2,14 +2,21 @@
     .container
         width: 1320px
     .main
+        &__reviews 
+            &-audio 
+                gap: 20px 30px
+                &-item 
+                    &:nth-child(2n)
+                        &::before
+                            left: calc(100% + 15px)
         &__promo 
             &-medal 
                 margin-right: 280px
-            .cube2
+            &-cube2
                 width: 400px
                 top: 25vw
                 left: 78%
-            .cube1
+            &-cube1
                 top: 320px
                 right: 83%
                 width: 246px
@@ -18,6 +25,7 @@
                 display: none
             &-back 
                 width: 1600px
+                min-width: unset
 @media (max-width: 1400px) 
     .container
         width: 1140px
@@ -42,9 +50,80 @@
             padding-bottom: 50px
     input 
         padding: 15px
+    .works 
+        &__promo 
+            .main__promo
+                &-title.title
+                    &84 
+                        width: 500px
+                    &88
+                        width: 408px
+                        margin-bottom: 80px
+                    &90
+                        width: 500px
+                        margin-bottom: 70px
+                &-images.images
+                    &92
+                        top: 420px
+        &__points 
+            &-row 
+                margin-bottom: 25px
+                .works__points-item
+                    margin-right: 25px
+            &-item 
+                width: 530px
+            &.cols 
+                grid-template: auto / repeat(3, 1fr)
     .main
         &__map 
             height: 720px
+        &__reviews
+            &-audio 
+                grid-template: auto / 1fr 
+                gap: 15px
+                &-watch 
+                    width: 72px
+                    height: 42px
+                    font-size: 12px
+                    left: 0
+                    top: unset
+                    bottom: 20px
+                    img 
+                        width: 42px
+                        transform: rotate(270deg)
+                        right: unset
+                        left: 0
+                        bottom: calc(100% + 6px)
+                &-item 
+                    &:nth-child(2n - 1), &:last-child
+                        margin-left: 80px
+                    &:nth-child(2n)
+                        &::before
+                            display: none
+            &-image 
+                width: 265px
+            &-content 
+                margin-top: 60px
+            &-media 
+                width: 460px
+                margin-right: 30px
+                iframe, video 
+                    height: 290px
+                    margin-bottom: 40px
+                &-watch 
+                    left: 0
+            &-slider 
+                &-arrows 
+                    margin-left: 20px
+                &-track 
+                    width: 250px
+                    .review 
+                        border-radius: 28px
+                        width: 185px
+                        &.r0, &.r1, &.r2, &.r3, &.r4
+                            left: calc(100% + 20px)
+                        &.r0 
+                            width: calc(100% - 27px)
         &__rucovod
             &-back 
                 width: 1400px
@@ -118,6 +197,13 @@
 @media (max-width: 1200px) 
     .container
         width: 960px
+    .gallery
+        &__overlay
+            &-image 
+                height: auto
+                max-height: 90vh
+                max-width: unset 
+                width: 80vw
     .text
         &_fz 
             &16 
@@ -128,7 +214,9 @@
                 font-size: 17px
             &30
                 font-size: 25px
-            &80
+            &40 
+                font-size: 33px
+            &80, &90
                 font-size: 55px
     .header
         padding: 7px 0px
@@ -144,7 +232,72 @@
             max-width: 1220px
         &__data 
             padding: 15px 0px
+    .contacts
+        &__promo 
+            h1 
+                margin-bottom: 100px
+        &__main, &__data 
+            margin-bottom: 50px
+    .works
+        &__promo 
+            .main__promo
+                &-title.title
+                    &82
+                        width: 150px
+                        margin-bottom: 70px
+                    &84
+                        width: 450px
+                    &86 
+                        width: 230px
+                        margin-bottom: 80px
+                    &88
+                        width: 350px
+                    &90
+                        width: 400px
+                    &92
+                        width: 190px
+                &-images.images 
+                    &82 
+                        .girl
+                            width: 1300px
+                    &84
+                        top: 350px
+                        .girl 
+                            margin-right: 40px
+                        .boy, .girl 
+                            width: 560px
+                    &86 
+                        .girl
+                            width: 700px
+                            margin-left: 50px
+                    &88
+                        .girl
+                            width: 650px
+                    &90
+                        .girl, .boy
+                            width: 500px
+                    &92
+                        top: 320px
+                        .girl
+                            width: 630px
+                            margin-right: 380px
+        &__simpletext
+            padding: 20px
+        &__content 
+            margin-bottom: 100px
+            &-undertitle 
+                margin-bottom: 30px
+        &__points 
+            &-item 
+                padding: 20px
+                width: auto
+                flex: 1
+            &.cols 
+                grid-template: auto / repeat(3, 1fr)
+                gap: 15px
     .main
+        &__reviews
+            margin-bottom: 100px
         &__map 
             &-cloud 
                 max-width: 1220px
@@ -210,8 +363,10 @@
         &__gallery 
             margin-bottom: 100px
             &-item 
-                width: 300px
-                height: 300px
+                // width: 300px
+                // height: 300px
+                width: calc(34vw - 30px)
+                height: calc(34vw - 30px)
         &__benefit
             &-item
                 width: 305px
@@ -224,11 +379,11 @@
             height: 1000px
             &-items 
                 width: 1200px
-            .cube1
+            &-cube1
                 top: 160px
                 right: 83%
                 width: 154px
-            .cube2
+            &-cube2
                 width: 222px
                 top: 41vw
                 left: 85%
@@ -295,7 +450,68 @@
             flex-direction: column
             .header__logo
                 margin-bottom: 20px
+    .works 
+        &__points 
+            &-row 
+                margin-bottom: 15px
+                .works__points-item
+                    margin-right: 15px
+            &-item 
+                padding: 15px 20px
+            &.cols 
+                grid-template: auto / repeat(2, 1fr)
+        &__simpletext
+            padding: 15px 20px
     .main
+        &__reviews
+            &-audio 
+                &-watch 
+                    bottom: -60px
+                &-item 
+                    &:nth-child(2n - 1), &:last-child
+                         margin-left: 0
+            &-slider 
+                &-arrows 
+                    margin-left: 15px
+                    img 
+                        width: 36px
+                &-watch 
+                    font-size: 12px
+                    height: 34px
+                    width: 90px
+                    left: calc(100% + 76px)
+                    img 
+                        width: 38px
+                &-track 
+                    width: 210px
+                    .review 
+                        width: 160px
+                        border-radius: 23px
+                        transform: translateX(calc(-100% - 15px))
+                        &.r0, &.r1, &.r2, &.r3, &.r4
+                            left: calc(100% + 15px)
+                        &.r0 
+                            width: calc(100% - 22px)
+                        &.r2 
+                            transform: translateX(calc(100% + 15px))
+                        &.r3 
+                            transform: translateX(calc(200% + 30px))
+                        &.r4 
+                            transform: translateX(calc(300% + 45px))
+            &-image 
+                width: 187px
+            &-media 
+                width: 300px
+                margin-right: 10px
+                iframe, video 
+                    height: 200px
+                    margin-bottom: 20px
+                &-watch 
+                    width: 109px
+                    height: 38px
+                    font-size: 12px
+                    img 
+                        width: 40px
         &__map 
             height: 670px
             &-cloud 
@@ -373,7 +589,7 @@
                 align-self: flex-start
                 margin-right: 0
                 margin-top: 60px
-            .cube2
+            &-cube2
                 left: 80%
                 top: 69vw 
             &-ps 
@@ -391,8 +607,14 @@
                 font-size: 16px
             &30
                 font-size: 23px
+            &40 
+                font-size: 26px
             &80
                 font-size: 37px
+            &90
+                font-size: 46px
+            &100
+                font-size: 80px
     .header
         &__map 
             display: none
@@ -430,13 +652,117 @@
                 span 
                     max-width: 260px
                     width: 260px
-                    font-size: 26px
+                    font-size: 23px
                     line-height: 26px
                     letter-spacing: 2.6px
                     position: absolute
                     top: 0
                     left: 100px
+    .contacts 
+        &__promo h1, &__main, &__data 
+            margin-bottom: 40px
+        &__data, &__main 
+            flex-direction: column
+            align-items: center
+        &__main 
+            .header__map
+                display: flex
+            & > * 
+                margin-right: 0
+                margin-bottom: 20px
+                &:last-child
+                    margin-bottom: 0 !important
+    .works
+        &__promo 
+            .main__promo
+                &-title.title
+                    &82
+                        width: 120px
+                    &84 
+                        width: 350px
+                        margin-top: 10px
+                    &86 
+                        width: 170px
+                        margin-bottom: 40px
+                    &88
+                        width: 300px
+                        margin-top: 10px
+                    &90
+                        width: 350px
+                    &92
+                        width: 150px
+                &-images.images 
+                    &82 
+                        top: 300px
+                        .girl 
+                            width: 1000px
+                    &84 
+                        .boy, .girl 
+                            width: 460px
+                    &86 
+                        top: 300px
+                        .girl
+                            width: 550px
+                    &88
+                        .girl
+                            width: 550px
+                            margin-left: 150px
+                    &90
+                        .girl, .boy
+                            width: 400px
+                    &92
+                        .girl 
+                            width: 530px
+                            margin-right: 330px
+        &__content
+            margin-bottom: 50px
+            &-undertitle 
+                margin-bottom: 15px
+                span 
+                    padding: 0px 5px
+            &-title 
+                margin: 10px 0px 20px
+        &__points 
+            &-row 
+                display: flex
+                flex-direction: column
+                .works__points-item
+                    margin-right: 0
+                    margin-bottom: 15px
+                    &:last-child
+                        margin-bottom: 0 !important
+            &.cols 
+                grid-template: auto / repeat(1, 1fr)
     .main 
+        &__reviews
+            margin-bottom: 70px
+            &-audio 
+                &-watch 
+                    bottom: 20px
+                &-item 
+                    &:nth-child(2n - 1), &:last-child
+                        margin-left: 80px
+            &-slider 
+                width: 100%
+                &-watch 
+                    left: calc(100% + 165px)
+                    bottom: 0
+                    img 
+                        transform: rotate(180deg)
+                        top: unset
+                        bottom: 100%
+            &-image 
+                display: none
+            &-content
+                margin-top: 15px
+                flex-direction: column
+            &-media 
+                width: 410px
+                margin: 0px auto 50px
+                &-watch 
+                    left: 46px
+                iframe, video
+                    height: 240px
         &__map 
             display: flex
             flex-direction: column
@@ -522,15 +848,17 @@
             &-item 
                 border-radius: 20px
                 margin-right: 15px
-                width: 195px
-                height: 195px
+                // width: 195px
+                // height: 195px
+                width: calc(33vw - 15px)
+                height: calc(33vw - 15px)
         &__promo 
             padding-top: 70px
             height: 880px
-            .cube1
+            &-cube1
                 top: 125px
                 right: 83%
-            .cube2
+            &-cube2
                 left: 75%
                 top: 370px
             &-title 
@@ -609,7 +937,67 @@
             align-items: center
             span 
                 font-size: 12px
+    .works
+        &__promo 
+            .main__promo
+                &-title.title
+                    &82 
+                        width: 110px
+                        margin-bottom: 40px
+                    &84 
+                        width: 310px
+                        margin-top: 0
+                    &86 
+                        width: 140px
+                    &88
+                        width: 250px
+                        margin-top: 0
+                        margin-bottom: 40px
+                    &90
+                        width: 300px
+                        margin-bottom: 40px
+                    &92
+                        width: 120px
+                &-images.images 
+                    top: 405px
+                    &82
+                        .girl 
+                            width: 700px
+                    &84 
+                        .girl, .boy
+                            width: 282px
+                    &86 
+                        .girl
+                            width: 360px
+                            margin-left: 0px
+                    &88
+                        .girl 
+                            width: 400px
+                            margin-left: 0
+                    &90
+                        .girl, .boy
+                            width: 300px
+                    &92
+                        .girl
+                            width: 400px
+                            margin-right: 0
     .main
+        &__reviews
+            &-media 
+                max-width: 100%
+                &-watch 
+                    left: 100px
+                    bottom: 103%
+            &-slider 
+                &-watch 
+                    left: 100%
+                    bottom: -45px
+                &-arrows 
+                    margin-left: 6px
+                    img 
+                        width: 32px
+                    .left 
+                        margin-right: 3px
         &__map 
             &-cloud 
                 width: 600px
@@ -682,6 +1070,10 @@
                 &-image 
                     max-width: 175px
                     right: 0
+        &__gallery 
+            &-item 
+                width: calc(50vw - 15px)
+                height: calc(50vw - 15px)
         &__benefit 
             padding-top: 10px
             &-item 
@@ -715,12 +1107,12 @@
                 .cloud 
                     width: 600px
                     bottom: -34px
-            .cube1
+            &-cube1
                 width: 53px
                 top: 347px
                 left: 0%
                 right: unset
-            .cube2
+            &-cube2
                 width: 48px
                 left: unset
                 right: -2%
@@ -798,11 +1190,23 @@
                     width: 22px
 @media (max-width: 360px)
     .header
-        &__phone 
-            span, a 
-                font-size: 11px
-        &__map, &__phone 
+        .header__phone 
             img 
-                margin-right: 8px
-                max-width: 20px
-                min-width: 20px
+                display: none
+    .main
+        &__reviews
+            &-audio 
+                &-watch 
+                    bottom: -42px
+                &-item 
+                    &:nth-child(2n - 1), &:last-child
+                        margin-left: 31px
+    .footer
+        &__main 
+            .header__logo 
+                img 
+                    width: 121px
+                span 
+                    font-size: 18px
+                    max-width: 230px
+                    width: 230px

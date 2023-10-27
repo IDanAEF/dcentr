@@ -19,18 +19,24 @@
                 <span>Детский ДОСУГОВЫЙ центр</span>
             </a>
             <div class="header__right">
-                <div class="header__map text_fw500">
-                    <img src="<?=$imgPath?>map.png" alt="г. Лыткарино, 6 микрорайон, дом 33">
-                    <span>г. Лыткарино, <br>6 микрорайон, дом 33</span>
-                </div>
+                <?php if (get_field('address', 28)) : ?>
+                <a href="<?=get_field('address-link', 28)?>" target="_blank" class="header__map text_fw500">
+                    <img src="<?=$imgPath?>map.png" alt="Адрес">
+                    <span><?=get_field('address', 28)?></span>
+                </a>
+                <?php endif; ?>
+                <?php if (get_field('phone', 28)) : ?>
                 <div class="header__phone">
-                    <img src="<?=$imgPath?>whatsapp.svg" alt="">
+                    <img src="<?=$imgPath?>whatsapp.svg" alt="WhatsApp">
                     <div class="header__phone-text">
-                        <a href="tel:+79774280156" class="text_fz16 text_fw600">+7(977) 428-01-56</a>
+                        <a href="https://api.whatsapp.com/send/?phone=<?=str_replace(['-', '+', '(', ')', ' '], '', get_field('phone', 28))?>" target="_blank" class="text_fz16 text_fw600">
+                            <?=get_field('phone', 28)?>
+                        </a>
                         <span class="text_fw500">Заказать звонок</span>
                     </div>
                 </div>
-                <button class="header__button purp text_fz16 text_fw600 text_ffMont">Пробное занятие</button>
+                <?php endif; ?>
+                <a href="#prob-event" class="header__button button purp text_fz16 text_fw600 text_ffMont">Пробное занятие</a>
             </div>
         </div>
     </header>

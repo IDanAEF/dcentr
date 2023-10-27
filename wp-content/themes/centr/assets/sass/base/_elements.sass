@@ -169,8 +169,17 @@ ul
         &30 
             font-size: 30px
             line-height: 126%
+        &40 
+            font-size: 40px
+            line-height: 120%
         &80 
             font-size: 80px
+            line-height: 100%
+        &90
+            font-size: 90px
+            line-height: 100%
+        &100
+            font-size: 100px
             line-height: 100%
 button, .button 
     border-radius: 50px
@@ -185,6 +194,39 @@ button, .button
     justify-content: center
     text-align: center
     cursor: pointer
+    width: fit-content
     &.purp
         border-bottom: 3px solid #986DCE
         background: #C6A0F6
+.audio
+    &-control
+        display: flex
+        align-items: center
+    &-line 
+        width: 163px
+        height: 6px
+        border-radius: 3px
+        background: #E9E9E9
+        cursor: pointer
+        overflow: hidden
+        span
+            display: block
+            width: 0%
+            height: 100%
+            border-radius: 3px
+            background: #C3566B
+            pointer-events: none
+    &-btn 
+        margin-right: 10px
+        width: 45px
+        height: 45px
+        cursor: pointer
+        img 
+            width: 100%
+        .stop
+            display: none
+        &.active
+            .play
+                display: none
+            .stop
+                display: block

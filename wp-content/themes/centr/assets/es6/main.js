@@ -1,5 +1,8 @@
 import mask from "./blocks/mask";
 import forms from "./blocks/forms";
+import gallery from "./blocks/gallery";
+import scrolling from "./blocks/scrolling";
+import reviews from "./blocks/reviews";
 import other from "./blocks/other";
 
 'use strict';
@@ -7,5 +10,8 @@ import other from "./blocks/other";
 window.addEventListener('DOMContentLoaded', () => {
     mask('input[type="tel"]');
     forms();
+    gallery();
+    scrolling();
+    reviews();
     other();
 });

@@ -1,0 +1,24 @@
+.gallery
+    &__overlay
+        position: fixed
+        z-index: 1000
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background: rgba(0, 0, 0, 0.8)
+        opacity: 0
+        visibility: hidden
+        transition: 0.4s all
+        &.active 
+            opacity: 1
+            visibility: visible
+        &-image 
+            height: 90vh
+            max-width: 80vw
+            object-fit: contain
+        &-block 
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
