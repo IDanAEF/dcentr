@@ -1,6 +1,5 @@
 <?php 
     add_theme_support('menus');
-    add_theme_support('post-thumbnails');
 
     function dcentrAddScripts() {
         wp_enqueue_style( 'dcentr_main_style', get_template_directory_uri() . '/assets/css/style.min.css' );

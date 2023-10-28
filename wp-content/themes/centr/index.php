@@ -165,6 +165,53 @@
     <?php get_template_part('template-parts/feedback') ?>
     <?php get_template_part('template-parts/reviews') ?>
     <?php get_template_part('template-parts/rucovod') ?>
+    <?php 
+        $my_posts = get_posts( array(
+            'numberposts' => 6,
+            'category'    => 2,
+            'orderby'     => 'date',
+            'order'       => 'DESC',
+            'include'     => array(),
+            'exclude'     => array(),
+            'meta_key'    => '',
+            'meta_value'  =>'',
+            'post_type'   => 'post',
+            'suppress_filters' => true,
+        ) );
+        
+        global $post;
+
+        if ($my_posts) :
+    ?>
+    <section class="main__news">
+        <div class="container">
+            <h2 class="text_fz80 text_black text_fw700 text_ffAmat">Новости:</h2>
+            <div class="main__news-line text_fw700">
+                <?php
+                    foreach( $my_posts as $post ){
+                        setup_postdata( $post );
+                        ?>
+                        <a href="<?=get_permalink()?>" class="main__news-item">
+                            <?php if (get_field('image')) : ?>
+                                <img src="<?=get_field('image')['sizes']['medium_large']?>" alt="<?php the_title(); ?>" class="main__news-item-image">
+                            <?php endif; ?>
+                            <div class="main__news-item-descr">
+                                <?=get_field('preview')?>
+                            </div>
+                            <div class="main__news-item-date">
+                                <span><?=get_the_date('d.m.Y')?></span>
+                                <span><?=get_the_date('H:i')?></span>
+                            </div>
+                        </a>
+                        <?php
+                    }
+                    
+                    wp_reset_postdata();
+                ?>
+            </div>
+        </div>
+    </section>
+    <?php endif; ?>
     <?php get_template_part('template-parts/map') ?>
 </main>
 <?php get_footer(); ?>

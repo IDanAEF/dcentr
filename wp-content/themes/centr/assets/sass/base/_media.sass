@@ -50,6 +50,10 @@
             padding-bottom: 50px
     input 
         padding: 15px
+    .single-news
+        padding-top: 150px
+        &__image 
+            max-height: 570px
     .works 
         &__promo 
             .main__promo
@@ -75,6 +79,11 @@
             &.cols 
                 grid-template: auto / repeat(3, 1fr)
     .main
+        &__news 
+            &-item 
+                padding: 15px
+                &-image 
+                    height: 180px
         &__map 
             height: 720px
         &__reviews
@@ -238,6 +247,10 @@
                 margin-bottom: 100px
         &__main, &__data 
             margin-bottom: 50px
+    .single-news
+        &__image 
+            margin-bottom: 30px
+            max-height: 500px
     .works
         &__promo 
             .main__promo
@@ -296,6 +309,16 @@
                 grid-template: auto / repeat(3, 1fr)
                 gap: 15px
     .main
+        &__news 
+            margin-top: 100px
+            &-line 
+                margin-top: 40px
+                gap: 12px
+            &-item 
+                &-image 
+                    height: 160px
+                &-image, &-descr 
+                    margin-bottom: 15px
         &__reviews
             margin-bottom: 100px
         &__map 
@@ -450,6 +473,16 @@
             flex-direction: column
             .header__logo
                 margin-bottom: 20px
+    .single-news
+        padding-top: 100px
+        &__promo h1, &__date, &__detail 
+            margin-bottom: 15px
+        &__image 
+            max-height: 375px
+        &__navigate
+            &-arrow 
+                width: 140px
+                height: 90px
     .works 
         &__points 
             &-row 
@@ -463,6 +496,9 @@
         &__simpletext
             padding: 15px 20px
     .main
+        &__news 
+            &-line 
+                grid-template: auto / 1fr 1fr
         &__reviews
             &-audio 
                 &-watch 
@@ -734,6 +770,15 @@
             &.cols 
                 grid-template: auto / repeat(1, 1fr)
     .main 
+        &__news 
+            margin-top: 70px
+            &-line
+                margin-top: 30px
+            &-item 
+                &-image 
+                    height: 146px
+                &-descr 
+                    font-size: 12px
         &__reviews
             margin-bottom: 70px
             &-audio 
@@ -937,6 +982,11 @@
             align-items: center
             span 
                 font-size: 12px
+    .single-news
+        &__navigate
+            &-arrow 
+                width: 110px
+                height: 80px
     .works
         &__promo 
             .main__promo
@@ -982,6 +1032,9 @@
                             width: 400px
                             margin-right: 0
     .main
+        &__news 
+            &-line 
+                grid-template: auto / 1fr
         &__reviews
             &-media 
                 max-width: 100%
