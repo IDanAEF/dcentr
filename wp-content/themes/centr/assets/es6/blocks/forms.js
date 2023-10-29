@@ -1,4 +1,14 @@
 const forms = () => {
+    const hideScroll = () => {
+        document.querySelector('body').classList.add('fixed');
+        document.querySelector('html').classList.add('fixed');
+    }
+
+    const showScroll = () => {
+        document.querySelector('body').classList.remove('fixed');
+        document.querySelector('html').classList.remove('fixed');
+    }
+
     async function postData(url, data) {
         let res = await fetch(url, {
             method: "POST",
@@ -27,7 +37,10 @@ const forms = () => {
 
     try {
         //forms 
-        const forms = document.querySelectorAll('form');
+        const forms = document.querySelectorAll('form'),
+              modalField = document.querySelector('.modal'),
+              modalSuccess = document.querySelector('#modal__success'),
+              modalBodies = document.querySelectorAll('.modal__body');
 
         forms.forEach(form => {
             const inputs = form.querySelectorAll('input');
@@ -48,13 +61,11 @@ const forms = () => {
 
                 postData(form.action, formData)
                 .then((res) => {
-                    const succesField = form.querySelector('.success');
+                    hideScroll();
 
-                    if (succesField) succesField.style.display = 'block';
-
-                    setTimeout(() => {
-                        succesField.style.display = '';
-                    }, 4000);
+                    modalBodies.forEach(item => item.classList.remove('active'));
+                    modalSuccess.classList.add('active');
+                    modalField.classList.add('active');
                 });
             });
         });

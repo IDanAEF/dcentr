@@ -37,3 +37,59 @@
                     left: -20px
                 &.right 
                     right: -20px
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: 11
+    background: url('../images/modal-back.png') center center/cover no-repeat, #fff
+    transition: 0.4s all 
+    opacity: 0
+    visibility: hidden
+    transform: translateY(-70px)
+    &.active 
+        opacity: 1
+        visibility: visible
+        transform: translateY(0px)
+    &__body 
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        transition: 0.4s all 
+        opacity: 0
+        visibility: hidden
+        &.active 
+            opacity: 1
+            visibility: visible
+    &__close 
+        width: 42px
+        position: absolute
+        top: 20px
+        right: 20px
+        cursor: pointer
+        z-index: 3
+    &__success
+        height: 670px
+        max-height: 91vh
+        .main__form 
+            height: 100%
+        &-owl 
+            position: absolute
+            bottom: 0
+            z-index: 0
+            left: -35px
+            width: 318px
+        span, h3
+            position: relative
+            z-index: 1 
+        h3
+            letter-spacing: 1.6px
+            display: flex
+            align-items: center
+            margin-bottom: 20px
+            img 
+                width: 88px
+                margin-right: 20px

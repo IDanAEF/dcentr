@@ -68,11 +68,8 @@
         $to = get_option('admin_email');
         $from = get_option('admin_email');
         $subject = get_bloginfo('name').": Новое сообщение с формы связи.";
-        $message = "
-            У вас новое сообщение с формы обратной связи.
 
-            ".$text."
-        ";
+        $message = "У вас новое сообщение с формы обратной связи.\n\n".$text;
 
         $mailheaders = "MIME-Version: 1.0\r\n";
         $mailheaders .= "Content-Type: text/plain; charset=UTF-8\r\n";

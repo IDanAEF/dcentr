@@ -5,6 +5,13 @@
         &__owl 
             right: 62vw
             width: 526px
+    .header
+        &__menu 
+            padding: 140px 0px 40px
+            .container 
+                a 
+                    margin-bottom: 15px
+                    font-size: 33px
     .main
         &__reviews 
             &-audio 
@@ -61,6 +68,9 @@
     .error404
         &__owl
             width: 380px
+    .modal
+        &__success
+            height: 550px
     .works 
         &__promo 
             .main__promo
@@ -86,6 +96,14 @@
             &.cols 
                 grid-template: auto / repeat(3, 1fr)
     .main
+        &__stocks 
+            &-back 
+                width: 1520px
+            &-line 
+                gap: 15px
+            &-item 
+                height: 286px
+                padding: 20px
         &__news 
             &-item 
                 padding: 15px
@@ -157,7 +175,6 @@
             &-descr 
                 width: 360px
         &__works
-            margin-bottom: 200px
             &-row 
                 gap: 16px 
                 margin-bottom: 16px
@@ -232,15 +249,33 @@
                 font-size: 25px
             &40 
                 font-size: 33px
+            &60 
+                font-size: 45px
             &80, &90
                 font-size: 55px
     .header
         padding: 7px 0px
+        &__menu 
+            display: none !important
+        &__burger
+            display: flex
         &__logo 
             img 
                 width: 54px
             span 
                 max-width: 140px
+        &__button 
+            width: 200px
+        &.active 
+            .header__bottom 
+                padding-top: 7px
+        &__bottom 
+            .container 
+                & > * 
+                    margin-right: 15px
+                    &::after 
+                        height: 10px
+                        right: -8px
     .footer 
         &__cloud 
             width: 1220px
@@ -325,6 +360,10 @@
                 grid-template: auto / repeat(3, 1fr)
                 gap: 15px
     .main
+        &__stocks 
+            margin-bottom: 100px
+            &-item 
+                height: 250px
         &__news 
             margin-top: 100px
             &-line 
@@ -513,6 +552,20 @@
         &__simpletext
             padding: 15px 20px
     .main
+        &__stocks 
+            h2 
+                margin-bottom: 30px
+            &-back 
+                width: 1000px
+            &-line 
+                grid-template: auto / 1fr
+            &-item 
+                height: 240px
+                &.long 
+                    grid-column-start: unset 
+                    grid-column-end: unset
+                    align-items: flex-start
+                    justify-content: flex-end
         &__news 
             &-line:not(.slider-list), &-track 
                 grid-template: auto / 1fr 1fr
@@ -662,6 +715,8 @@
                 font-size: 23px
             &40 
                 font-size: 26px
+            &60
+                font-size: 30px
             &80
                 font-size: 37px
             &90
@@ -671,6 +726,58 @@
     .header
         &__map 
             display: none
+        & > .container 
+            z-index: 2
+        &__bottom 
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            z-index: 1
+            background: linear-gradient(359deg, rgba(233, 230, 243, 0.84) 0.46%, #E9E6F3 25.85%, #E9E6F3 67.54%, #FFF 99.54%)
+            &-sub 
+                display: flex !important
+            .header
+                &__map, &__phone, &__button
+                    display: flex
+                &__button
+                    width: 100%
+                    max-width: 270px
+                &__map, &__phone 
+                    margin-bottom: 27px
+                    width: 100%
+                    max-width: 220px
+            &-info 
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 100%
+                margin-top: auto
+            &.active 
+                height: 100vh
+                max-height: 100vh
+                padding: 100px 0px 40px
+                overflow: auto
+            .container 
+                flex-direction: column
+                margin-bottom: 20px
+                & > *
+                    font-family: 'Amatic', 'Manrope' sans-serif
+                    font-size: 24px
+                    line-height: 32px
+                    font-weight: 700
+                    letter-spacing: 2.4px 
+                    text-transform: uppercase
+                    text-align: center
+                    margin-right: 0
+                    margin-bottom: 20px
+                    &::after
+                        display: none
+                    &:last-child
+                        margin-bottom: 0 !important
     .footer
         &__title
             margin-bottom: 30px
@@ -711,6 +818,24 @@
                     position: absolute
                     top: 0
                     left: 100px
+    .modal 
+        .main__form-image
+            display: none
+        &__success
+            height: 300px
+            text-align: center
+            h3 
+                img 
+                    width: 50px
+                    margin-right: 10px
+            &-owl 
+                display: none
+            .main__form 
+                width: 500px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
     .error404
         .main__map-cloud.bott
             top: 91%
@@ -795,6 +920,12 @@
             &.cols 
                 grid-template: auto / repeat(1, 1fr)
     .main 
+        &__stocks 
+            margin-bottom: 50px
+            &-item 
+                padding: 25px 20px
+                span 
+                    font-size: 14px
         &__news 
             margin-top: 70px
             &-line
@@ -978,6 +1109,17 @@
             &-block 
                 .arrow 
                     width: 32px
+    .modal
+        &__body 
+            width: calc(100% - 30px)
+        &__close 
+            width: 30px
+            top: 5px
+            right: 5px
+        &__success
+            height: 200px
+            .main__form 
+                width: 100%
     .footer 
         &__list 
             &-block 
@@ -1012,6 +1154,16 @@
             align-items: center
             span 
                 font-size: 12px
+        .header__phone 
+            display: none
+        &__bottom 
+            .container 
+                & > * 
+                    margin-bottom: 12px
+            .header
+                &__phone, &__map
+                    display: flex
+                    margin-bottom: 14px
     .single-news
         &__navigate
             &-arrow 
@@ -1070,6 +1222,9 @@
                             width: 400px
                             margin-right: 0
     .main
+        &__stocks 
+            &-item 
+                height: 167px
         &__news 
             &-line:not(.slider-list) 
                 grid-template: auto / 1fr
@@ -1295,10 +1450,6 @@
                 .dot 
                     width: 22px
 @media (max-width: 360px)
-    .header
-        .header__phone 
-            img 
-                display: none
     .main
         &__reviews
             &-audio 

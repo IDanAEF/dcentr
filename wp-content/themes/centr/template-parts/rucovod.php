@@ -1,4 +1,4 @@
-<section class="main__rucovod">
+<section class="main__rucovod" id="rucovods">
     <img src="<?=get_template_directory_uri()?>/assets/images/global-back.png" alt="global-back" class="main__rucovod-back">
     <div class="main__rucovod-arcs">
         <img src="<?=get_template_directory_uri()?>/assets/images/arc-rec1.png" alt="arc-rec1" class="light elem_animate top">

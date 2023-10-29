@@ -1,4 +1,41 @@
 .main
+    &__stocks
+        position: relative
+        z-index: 2
+        margin-bottom: 150px
+        h2 
+            margin-bottom: 50px
+        &-back 
+            position: absolute
+            z-index: -1 
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 1920px
+            max-height: unset
+            max-width: unset
+        &-line 
+            display: grid
+            grid-template: auto / 1fr 1fr
+            gap: 33px
+        &-item 
+            position: relative
+            overflow: hidden
+            height: 344px
+            border-radius: 20px
+            padding: 30px 40px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: flex-end
+            &.long 
+                grid-column-start: 1
+                grid-column-end: 3
+                justify-content: center
+                align-items: center
+            h3, span 
+                position: relative
+                z-index: 1
     &__news 
         position: relative
         z-index: 2
@@ -632,9 +669,9 @@
             position: relative
             overflow: hidden
     &__works 
-        margin-bottom: 360px
+        margin-bottom: 150px
         position: relative 
-        z-index: 2
+        z-index: 3
         h2 
             margin-bottom: 50px
         &-row 

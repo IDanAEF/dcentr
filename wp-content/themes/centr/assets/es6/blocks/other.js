@@ -1,4 +1,14 @@
 const other = () => {
+    const hideScroll = () => {
+        document.querySelector('body').classList.add('fixed');
+        document.querySelector('html').classList.add('fixed');
+    }
+
+    const showScroll = () => {
+        document.querySelector('body').classList.remove('fixed');
+        document.querySelector('html').classList.remove('fixed');
+    }
+
     try {
         //elem-text animate
         const targetElem = document.querySelectorAll('.elem_animate'),
@@ -40,53 +50,67 @@ const other = () => {
     }
 
     try {
-        //audio
-        const audioFields = document.querySelectorAll('.audio-control');
+        //modals
+        const modalField = document.querySelector('.modal'),
+              modalBodies = document.querySelectorAll('.modal__body'),
+              callBtns = document.querySelectorAll('.modal-call');
 
-        audioFields.forEach(audio => {
-            const audioBtn = audio.querySelector('.audio-btn'),
-                  audioLine = audio.querySelector('.audio-line'),
-                  audioLineSpan = audio.querySelector('.audio-line span'),
-                  audioRecord = audio.querySelector('audio');
+        const showModal = (id) => {
+            hideScroll();
 
-            audioRecord.loop = true;
+            modalBodies.forEach(item => item.classList.remove('active'));
+            modalField.querySelector('#'+id).classList.add('active');
+            modalField.classList.add('active');
+        }
 
-            const setPlay = () => {
-                audioBtn.classList.toggle('active');
+        const hideModal = () => {
+            showScroll();
 
-                if (audioBtn.classList.contains('active')) 
-                    audioRecord.play();
-                if (!audioBtn.classList.contains('active'))
-                    audioRecord.pause();
-            }
+            modalField.classList.remove('active');
+            modalBodies.forEach(item => item.classList.remove('active'));
+        }
 
-            const getLineWidth = () => {
-                return +window.getComputedStyle(audioLine).width.replace('px', '');
-            }
+        callBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.getAttribute('data-modal')) 
+                    showModal(btn.getAttribute('data-modal'));
+            });
+        });
 
-            const getSeconds = (perc) => {
-                return perc * (audioRecord.duration / 100);
-            }
+        modalField.addEventListener('click', (e) => {
+            if (e.target == modalField || e.target.classList.contains('modal__close'))
+                hideModal();
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
 
-            const getPerc = () => {
-                return audioRecord.currentTime / (audioRecord.duration / 100);
-            }
+    try {
+        //header-menu
+        const hamburger = document.querySelector('.header__burger'),
+              bottomMenu = document.querySelector('.header__bottom'),
+              menus = document.querySelectorAll('.header__menu'),
+              parents = bottomMenu.querySelectorAll('span.parent');
+            
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            bottomMenu.classList.toggle('active');
 
-            audioRecord.onloadedmetadata = function() {
-                audioBtn.querySelector('.play').addEventListener('click', setPlay);
-                audioBtn.querySelector('.stop').addEventListener('click', setPlay);
+            if (!hamburger.classList.contains('active')) 
+                menus.forEach(item => item.classList.remove('active'));
+        });
 
-                audioRecord.addEventListener('timeupdate', () => {
-                    audioLineSpan.style.width = getPerc()+'%';
+        parents.forEach(par => {
+            par.addEventListener('click', () => {
+                par.classList.toggle('active');
+                par.nextElementSibling.classList.toggle('active');
+
+                menus.forEach(menu => {
+                    if (par.getAttribute('data-menu') == menu.getAttribute('data-menu')) 
+                        menu.classList.toggle('active');
+                    else menu.classList.remove('active');
                 });
-
-                audioLine.addEventListener('click', (e) => {
-                    let lineWidth = getLineWidth(),
-                        size = (lineWidth - (lineWidth - e.offsetX)) / (lineWidth / 100);
-    
-                    audioRecord.currentTime = getSeconds(size);
-                });
-            };
+            });
         });
     } catch (e) {
         console.log(e.stack);

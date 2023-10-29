@@ -91,9 +91,31 @@
     </footer>
     <div class="gallery__overlay">
         <div class="gallery__overlay-block">
-            <img src="<?=get_template_directory_uri()?>/assets/images/arrow-left.svg" alt="left" class="arrow left">
-            <img src="<?=get_template_directory_uri()?>/assets/images/arrow-right.svg" alt="right" class="arrow right">
+            <img src="<?=$imgPath?>arrow-left.svg" alt="left" class="arrow left">
+            <img src="<?=$imgPath?>arrow-right.svg" alt="right" class="arrow right">
             
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal__body modal__feedback" id="feedback-modal">
+            <img src="<?=$imgPath?>close.svg" alt="close" class="modal__close">
+            <?php get_template_part('template-parts/form-default', null, [
+                'title' => 'Запишитесь на пробное занятие:',
+                'id' => 'form-modal',
+                'button' => 'Записаться'
+            ]) ?>
+        </div>
+        <div class="modal__body modal__success" id="modal__success">
+            <img src="<?=$imgPath?>close.svg" alt="close" class="modal__close">
+            <div class="main__form text_fz20 elem_animate left">
+                <img src="<?=$imgPath?>owl-success.png" alt="owl-success" class="modal__success-owl">
+                <h3 class="text_fz80 text_black text_fw700 text_ffAmat">
+                    <img src="<?=$imgPath?>success.svg" alt="success">
+                    Спасибо!
+                </h3>
+                <span>Ваша заявка успешно отправлена!</span>
+                <img src="<?=$imgPath?>girl.png" alt="girl" class="main__form-image">
+            </div>
         </div>
     </div>
     <?php if(get_field('coordinates', 28) && !is_404()) : ?>
