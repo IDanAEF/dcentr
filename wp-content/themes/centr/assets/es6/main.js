@@ -3,6 +3,7 @@ import forms from "./blocks/forms";
 import gallery from "./blocks/gallery";
 import scrolling from "./blocks/scrolling";
 import reviews from "./blocks/reviews";
+import simpleSlider from "./blocks/simpleSlider";
 import other from "./blocks/other";
 
 'use strict';
@@ -13,5 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
     gallery();
     scrolling();
     reviews();
+    simpleSlider();
     other();
 });

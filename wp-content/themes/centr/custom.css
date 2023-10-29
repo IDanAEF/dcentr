@@ -3,3 +3,8 @@
     margin-top: 15px;
     display: none;
 }
+@media (min-width: 576px) {
+    .slider.mobile-only .slider-track {
+        transform: none !important;
+    }
+}

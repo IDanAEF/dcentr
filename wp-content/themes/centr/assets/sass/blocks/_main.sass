@@ -3,11 +3,29 @@
         position: relative
         z-index: 2
         margin-top: 200px
-        &-line 
-            margin-top: 50px 
+        h2 
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &-arrows 
+            display: none
+            align-items: center
+            img 
+                width: 48px
+                filter: drop-shadow(0px 12px 14px rgba(54, 51, 72, 0.14))
+                transition: 0.3s all
+                cursor: pointer
+                &.off 
+                    pointer-events: none
+                    filter: drop-shadow(0px 12px 14px rgba(54, 51, 72, 0.14)) grayscale(1) opacity(0.6)
+            .left 
+                margin-right: 8px
+        &-line:not(.slider-list), &-track
             display: grid
             grid-template: auto / repeat(3, 1fr)
             gap: 30px
+        &-line 
+            margin-top: 50px 
         &-item 
             padding: 20px 30px
             border-radius: 20px
@@ -218,6 +236,7 @@
         &-cube1, &-cube2
             position: absolute
             z-index: 6
+            pointer-events: none
         &-cube1
             // left: 14px
             right: 78%
@@ -341,6 +360,7 @@
                 width: 1917px
                 transform: translate(-50%, 50%)
                 animation: side-to-side 7s ease-in-out infinite alternate
+                pointer-events: none
             .cloud2
                 opacity: 0.4
                 animation: side-to-side-rev 7s ease-in-out infinite alternate
@@ -379,10 +399,12 @@
                 top: 0
                 transform: translateY(90px) scale(0.7)
             .light 
+                pointer-events: none
                 width: 1671px
                 top: 100px
                 animation: fadeTop 1.5s ease-in-out forwards
             .white 
+                pointer-events: none
                 width: 1089px
                 top: 250px
                 animation: 1.5s fadeTop 0.7s ease-in-out forwards

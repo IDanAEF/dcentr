@@ -8,7 +8,7 @@
 <main class="single-news">
     <section class="single-news__promo">
         <div class="container">
-            <h1 class="text_fz90 text_fw700 text_black text_ffAmat"><?php the_title() ?></h1>
+            <h1 class="text_fz90 text_fw700 text_black text_ffAmat text_animate"><?php the_title() ?></h1>
             <div class="single-news__detail text_fw700 default-text">
                 <?=get_field('detail')?>
             </div>
@@ -17,7 +17,7 @@
                 <span><?=get_the_date('H:i')?></span>
             </div>
             <?php if (get_field('image')) : ?>
-                <img src="<?=get_field('image')['url']?>" alt="<?php the_title() ?>" class="single-news__image">
+                <img src="<?=get_field('image')['url']?>" alt="<?php the_title() ?>" class="single-news__image elem_animate top">
             <?php endif; ?>
             <div class="single-news__navigate">
                 <?php
@@ -34,7 +34,7 @@
                 <?php if ($next) : ?>
                 <a href="<?=get_permalink($next->ID)?>" class="single-news__navigate-arrow right">
                     <img src="<?=get_field('image', $next->ID)['sizes']['thumbnail']?>" alt="<?=get_the_title($next->ID)?>" class="img_bg">
-                    <img src="<?=get_template_directory_uri()?>/assets/images/arrow-right.svg" alt="left" class="image">
+                    <img src="<?=get_template_directory_uri()?>/assets/images/arrow-right.svg" alt="right" class="image">
                 </a>
                 <?php endif; ?>
             </div>

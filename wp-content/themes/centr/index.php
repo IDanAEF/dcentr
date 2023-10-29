@@ -183,31 +183,39 @@
 
         if ($my_posts) :
     ?>
-    <section class="main__news">
+    <section class="main__news slider mobile-only">
         <div class="container">
-            <h2 class="text_fz80 text_black text_fw700 text_ffAmat">Новости:</h2>
-            <div class="main__news-line text_fw700">
-                <?php
-                    foreach( $my_posts as $post ){
-                        setup_postdata( $post );
-                        ?>
-                        <a href="<?=get_permalink()?>" class="main__news-item">
-                            <?php if (get_field('image')) : ?>
-                                <img src="<?=get_field('image')['sizes']['medium_large']?>" alt="<?php the_title(); ?>" class="main__news-item-image">
-                            <?php endif; ?>
-                            <div class="main__news-item-descr">
-                                <?=get_field('preview')?>
-                            </div>
-                            <div class="main__news-item-date">
-                                <span><?=get_the_date('d.m.Y')?></span>
-                                <span><?=get_the_date('H:i')?></span>
-                            </div>
-                        </a>
-                        <?php
-                    }
-                    
-                    wp_reset_postdata();
-                ?>
+            <h2 class="text_fz80 text_black text_fw700 text_ffAmat elem_animate bott">
+                Новости:
+                <div class="main__news-arrows">
+                    <img src="<?=get_template_directory_uri()?>/assets/images/arrow-left.svg" alt="left" class="left slider-left">
+                    <img src="<?=get_template_directory_uri()?>/assets/images/arrow-right.svg" alt="right" class="right slider-right">
+                </div>
+            </h2>
+            <div class="main__news-line slider-list text_fw700 elem_animate top">
+                <div class="main__news-track slider-track">
+                    <?php
+                        foreach( $my_posts as $post ){
+                            setup_postdata( $post );
+                            ?>
+                            <a href="<?=get_permalink()?>" class="main__news-item slider-item">
+                                <?php if (get_field('image')) : ?>
+                                    <img src="<?=get_field('image')['sizes']['medium_large']?>" alt="<?php the_title(); ?>" class="main__news-item-image">
+                                <?php endif; ?>
+                                <div class="main__news-item-descr">
+                                    <?=get_field('preview')?>
+                                </div>
+                                <div class="main__news-item-date">
+                                    <span><?=get_the_date('d.m.Y')?></span>
+                                    <span><?=get_the_date('H:i')?></span>
+                                </div>
+                            </a>
+                            <?php
+                        }
+                        
+                        wp_reset_postdata();
+                    ?>
+                </div>
             </div>
         </div>
     </section>

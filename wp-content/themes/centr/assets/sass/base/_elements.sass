@@ -195,9 +195,27 @@ button, .button
     text-align: center
     cursor: pointer
     width: fit-content
+    position: relative
+    overflow: hidden
     &.purp
         border-bottom: 3px solid #986DCE
         background: #C6A0F6
+    &::before
+        content: ''
+        display: block
+        height: 150%
+        width: 11%
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4))
+        // opacity: 0.3
+        position: absolute
+        top: 50%
+        transform: translate(-100%, -50%) rotate(19deg)
+        left: -20px
+        transition: 0.4s all ease-in-out
+    &:hover
+        &::before 
+            left: 120%
+            transform: translate(0, -50%) rotate(19deg)
 .audio
     &-control
         display: flex

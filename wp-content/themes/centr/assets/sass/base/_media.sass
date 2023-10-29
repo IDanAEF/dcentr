@@ -1,6 +1,10 @@
 @media (max-width: 1600px) 
     .container
         width: 1320px
+    .error404
+        &__owl 
+            right: 62vw
+            width: 526px
     .main
         &__reviews 
             &-audio 
@@ -54,6 +58,9 @@
         padding-top: 150px
         &__image 
             max-height: 570px
+    .error404
+        &__owl
+            width: 380px
     .works 
         &__promo 
             .main__promo
@@ -241,6 +248,15 @@
             max-width: 1220px
         &__data 
             padding: 15px 0px
+    .error404
+        &__owl 
+            bottom: -30px
+        &__text 
+            h1 
+                font-size: 250px
+            img 
+                right: -64px
+                width: 60px
     .contacts
         &__promo 
             h1 
@@ -313,6 +329,7 @@
             margin-top: 100px
             &-line 
                 margin-top: 40px
+            &-line:not(.slider-list), &-track 
                 gap: 12px
             &-item 
                 &-image 
@@ -497,7 +514,7 @@
             padding: 15px 20px
     .main
         &__news 
-            &-line 
+            &-line:not(.slider-list), &-track 
                 grid-template: auto / 1fr 1fr
         &__reviews
             &-audio 
@@ -694,6 +711,14 @@
                     position: absolute
                     top: 0
                     left: 100px
+    .error404
+        .main__map-cloud.bott
+            top: 91%
+        &__owl 
+            display: none
+        &__text 
+            h1 
+                font-size: 180px
     .contacts 
         &__promo h1, &__main, &__data 
             margin-bottom: 40px
@@ -948,6 +973,11 @@
             &::before 
                 width: 10px
                 height: 10px
+    .gallery
+        &__overlay
+            &-block 
+                .arrow 
+                    width: 32px
     .footer 
         &__list 
             &-block 
@@ -987,6 +1017,14 @@
             &-arrow 
                 width: 110px
                 height: 80px
+    .error404
+        &__text 
+            width: 230px
+            img 
+                width: 45px
+                right: -37px
+                transform: rotate(-31deg)
+                bottom: 40px
     .works
         &__promo 
             .main__promo
@@ -1033,8 +1071,23 @@
                             margin-right: 0
     .main
         &__news 
-            &-line 
+            &-line:not(.slider-list) 
                 grid-template: auto / 1fr
+            &-item 
+                &-image 
+                    height: 42vw
+                    min-height: 146px
+            &-track
+                display: flex
+                width: fit-content
+                gap: unset
+                .main__news-item
+                    margin-right: 15px
+                    width: 280px
+                    &-image 
+                        height: 146px
+            &-arrows 
+                display: flex
         &__reviews
             &-media 
                 max-width: 100%

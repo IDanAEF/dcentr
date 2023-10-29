@@ -22,3 +22,18 @@
             top: 50%
             left: 50%
             transform: translate(-50%, -50%)
+            .arrow 
+                position: absolute
+                width: 45px
+                z-index: 2
+                top: 50%
+                cursor: pointer
+                transform: translateY(-50%)
+                transition: 0.3s opacity
+                &.off 
+                    opacity: 0.3
+                    pointer-events: none
+                &.left 
+                    left: -20px
+                &.right 
+                    right: -20px

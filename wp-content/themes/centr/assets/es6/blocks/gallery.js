@@ -2,7 +2,9 @@ const gallery = () => {
     try {
         const galleryField = document.querySelectorAll('.gallery'),
               galleryOverlay = document.querySelector('.gallery__overlay'),
-              galleryBlock = document.querySelector('.gallery__overlay-block');
+              galleryBlock = document.querySelector('.gallery__overlay-block'),
+              galleryRight = document.querySelector('.gallery__overlay-block .arrow.right'),
+              galleryLeft = document.querySelector('.gallery__overlay-block .arrow.left');
 
         galleryField.forEach(gallery => {
             let galleryTrack = gallery.querySelector('.gallery-track'),
@@ -31,6 +33,12 @@ const gallery = () => {
             };
 
             const setImage = () => {
+                if (galleryIndex == 0) galleryLeft.classList.add('off');
+                else galleryLeft.classList.remove('off');
+
+                if (galleryIndex == slidesCount - 1) galleryRight.classList.add('off');
+                else galleryRight.classList.remove('off');
+
                 galleryImage.src = slides[galleryIndex].getAttribute('data-full');
             }
 
@@ -70,6 +78,15 @@ const gallery = () => {
                     galleryImage.src = '';
                     galleryOverlay.classList.remove('active');
                 }
+            });
+
+            galleryRight.addEventListener('click', () => {
+                galleryIndex++;
+                setImage();
+            });
+            galleryLeft.addEventListener('click', () => {
+                galleryIndex--;
+                setImage();
             });
 
             let startPos = 0,

@@ -91,11 +91,12 @@
     </footer>
     <div class="gallery__overlay">
         <div class="gallery__overlay-block">
-            <span class="modal-close gallery__overlay-close"></span>
+            <img src="<?=get_template_directory_uri()?>/assets/images/arrow-left.svg" alt="left" class="arrow left">
+            <img src="<?=get_template_directory_uri()?>/assets/images/arrow-right.svg" alt="right" class="arrow right">
             
         </div>
     </div>
-    <?php if(get_field('coordinates', 28)) : ?>
+    <?php if(get_field('coordinates', 28) && !is_404()) : ?>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=5727f775-e56b-498e-bb2a-a48a1702a7f7&lang=ru_RU" type="text/javascript"></script>
     <script>
         ymaps.ready(function () {

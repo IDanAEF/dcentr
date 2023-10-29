@@ -2,9 +2,9 @@
     <img src="<?=get_template_directory_uri()?>/assets/images/footer-cloud.png" alt="footer-cloud" class="main__rucovod-cloud">
     <div class="container">
         <img src="<?=get_template_directory_uri()?>/assets/images/reviews/review-image.png" alt="Отзывы" class="main__reviews-image">
-        <h2 class="text_fz80 text_fw700 text_ffAmat text_black">Отзывы</h2>
+        <h2 class="text_fz80 text_fw700 text_ffAmat text_black text_animate">Отзывы</h2>
         <div class="main__reviews-content">
-            <div class="main__reviews-media">
+            <div class="main__reviews-media elem_animate right">
                 <?php if (get_field('reviews_video-youtube', 10) || get_field('reviews_video-file', 10)) : ?>
                     <div class="main__reviews-media-watch">
                         Посмотрите видеоотзыв о нас
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <?php if (get_field('reviews_main', 10)) : ?>
-            <div class="main__reviews-slider">
+            <div class="main__reviews-slider elem_animate left">
                 <div class="main__reviews-slider-track">
                     <div class="main__reviews-slider-watch">
                         Прочитайте, что нам пишут
