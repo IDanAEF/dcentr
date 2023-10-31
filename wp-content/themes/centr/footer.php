@@ -58,8 +58,8 @@
                             <div class="header__phone-text">
                                 <a href="https://api.whatsapp.com/send/?phone=<?=str_replace(['-', '+', '(', ')', ' '], '', get_field('phone', 28))?>" target="_blank" class="text_fz16 text_fw600">
                                     <?=get_field('phone', 28)?>
+                                    <span class="text_fw500">Заказать звонок</span>
                                 </a>
-                                <span class="text_fw500">Заказать звонок</span>
                             </div>
                         </div>
                         <?php endif; ?>
@@ -100,7 +100,7 @@
         <div class="modal__body modal__feedback" id="feedback-modal">
             <img src="<?=$imgPath?>close.svg" alt="close" class="modal__close">
             <?php get_template_part('template-parts/form-default', null, [
-                'title' => 'Запишитесь на пробное занятие:',
+                'title' => 'Запишитесь на пробное занятие',
                 'id' => 'form-modal',
                 'button' => 'Записаться'
             ]) ?>

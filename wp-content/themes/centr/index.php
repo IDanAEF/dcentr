@@ -165,32 +165,44 @@
     <section class="main__stocks" id="stocks">
         <img src="<?=$imgPath?>stocks-back.png" alt="stocks-back" class="main__stocks-back">
         <div class="container">
-            <h2 class="text_fz80 text_black text_fw700 text_ffAmat">Акции:</h2>
+            <h2 class="text_fz80 text_black text_fw700 text_ffAmat text_animate">Акции:</h2>
             <div class="main__stocks-line text_fz20 text_fw700">
-                <div class="main__stocks-item">
+                <div class="main__stocks-item elem_animate right">
                     <picture>
                         <source srcset="<?=$imgPath?>stocks/stocks1-2.jpg" media="(max-width: 992px)">
                         <img src="<?=$imgPath?>stocks/stocks1.jpg" alt="В день рождения" class="img_bg">
+                    </picture>
+                    <picture>
+                        <source srcset="<?=$imgPath?>stocks/plash1-2.png" media="(max-width: 992px)">
+                        <img src="<?=$imgPath?>stocks/plash1.png" alt="В день рождения" class="img_bg plash">
                     </picture>
                     <div class="main__stocks-text">
                         <h3 class="text_fz60 text_ffAmat">В день рождения</h3>
                         <span>дарим Вашему малышу <br>скидку в 50% на занятие.</span>
                     </div>
                 </div>
-                <div class="main__stocks-item">
+                <div class="main__stocks-item elem_animate left">
                     <picture>
                         <source srcset="<?=$imgPath?>stocks/stocks2-2.jpg" media="(max-width: 992px)">
                         <img src="<?=$imgPath?>stocks/stocks2.jpg" alt="Приведи друга" class="img_bg">
+                    </picture>
+                    <picture>
+                        <source srcset="<?=$imgPath?>stocks/plash2-2.png" media="(max-width: 992px)">
+                        <img src="<?=$imgPath?>stocks/plash2.png" alt="В день рождения" class="img_bg plash">
                     </picture>
                     <div class="main__stocks-text">
                         <h3 class="text_fz60 text_ffAmat">Приведи друга</h3>
                         <span>получил <br>20% скидки на занятие.</span>
                     </div>
                 </div>
-                <div class="main__stocks-item long text_white">
+                <div class="main__stocks-item long text_white elem_animate top">
                     <picture>
                         <source srcset="<?=$imgPath?>stocks/stocks3-2.jpg" media="(max-width: 992px)">
                         <img src="<?=$imgPath?>stocks/stocks3.jpg" alt="Абанемент на месяц" class="img_bg">
+                    </picture>
+                    <picture>
+                        <source srcset="<?=$imgPath?>stocks/plash3-2.png" media="(max-width: 992px)">
+                        <img src="<?=$imgPath?>stocks/plash3.png" alt="В день рождения" class="img_bg plash">
                     </picture>
                     <div class="main__stocks-text">
                         <h3 class="text_fz60 text_ffAmat">Абонемент на месяц</h3>

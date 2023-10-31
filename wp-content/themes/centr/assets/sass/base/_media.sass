@@ -255,10 +255,6 @@
                 font-size: 55px
     .header
         padding: 7px 0px
-        &__menu 
-            display: none !important
-        &__burger
-            display: flex
         &__logo 
             img 
                 width: 54px
@@ -270,6 +266,7 @@
             .header__bottom 
                 padding-top: 7px
         &__bottom 
+            padding-top: 7px
             .container 
                 & > * 
                     margin-right: 15px
@@ -513,6 +510,13 @@
     .header
         &__button 
             display: none
+        &__menu 
+            &-owl 
+                width: 320px
+            .container 
+                a 
+                    font-size: 25px
+                    margin-bottom: 2px
     ul 
         li 
             padding-left: 25px
@@ -561,6 +565,8 @@
                 grid-template: auto / 1fr
             &-item 
                 height: 240px
+                .plash 
+                    transform: translate(-50%, -50%) !important
                 &.long 
                     grid-column-start: unset 
                     grid-column-end: unset
@@ -726,6 +732,10 @@
     .header
         &__map 
             display: none
+        &__menu 
+            display: none !important
+        &__burger
+            display: flex
         & > .container 
             z-index: 2
         &__bottom 
@@ -735,11 +745,16 @@
             position: absolute
             top: 0
             left: 0
+            max-height: 0
+            overflow: hidden
+            padding: 0
             width: 100%
             z-index: 1
             background: linear-gradient(359deg, rgba(233, 230, 243, 0.84) 0.46%, #E9E6F3 25.85%, #E9E6F3 67.54%, #FFF 99.54%)
             &-sub 
                 display: flex !important
+                &.active 
+                    padding-bottom: 20px
             .header
                 &__map, &__phone, &__button
                     display: flex
@@ -1155,7 +1170,12 @@
             span 
                 font-size: 12px
         .header__phone 
-            display: none
+            img 
+                display: none
+            span 
+                padding-bottom: 0
+            a 
+                font-size: 12px
         &__bottom 
             .container 
                 & > * 
@@ -1458,6 +1478,26 @@
                 &-item 
                     &:nth-child(2n - 1), &:last-child
                         margin-left: 31px
+    .header
+        .header
+            &__logo 
+                img 
+                    width: 35px
+                    margin-right: 6px
+                span
+                    font-size: 14px
+                    line-height: 15px
+            &__burger 
+                width: 30px
+                height: 42px
+                margin-left: 10px
+            &__phone 
+                img 
+                    display: none
+                a 
+                    font-size: 11px
+                span 
+                    font-size: 10px 
     .footer
         &__main 
             .header__logo 

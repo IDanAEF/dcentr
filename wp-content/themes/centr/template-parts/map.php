@@ -3,7 +3,7 @@
     <div class="main__map-card" id="map"></div>
     <div class="container">
         <?php get_template_part('template-parts/form-default', null, [
-            'title' => 'Запишитесь на пробное занятие:',
+            'title' => 'Запишитесь на пробное занятие',
             'id' => 'prob-event',
             'button' => 'Записаться'
         ]) ?>

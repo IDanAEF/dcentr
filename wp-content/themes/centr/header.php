@@ -1,5 +1,7 @@
 <?php
-    $imgPath = get_template_directory_uri().'/assets/images/'
+    $imgPath = get_template_directory_uri().'/assets/images/';
+
+    global $post;
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -31,8 +33,8 @@
                     <div class="header__phone-text">
                         <a href="https://api.whatsapp.com/send/?phone=<?=str_replace(['-', '+', '(', ')', ' '], '', get_field('phone', 28))?>" target="_blank" class="text_fz16 text_fw600">
                             <?=get_field('phone', 28)?>
+                            <span class="text_fw500">Заказать звонок</span>
                         </a>
-                        <span class="text_fw500">Заказать звонок</span>
                     </div>
                 </div>
                 <?php endif; ?>
@@ -64,7 +66,7 @@
                     <?php
                         foreach($cards as $id) {
                             ?>
-                            <a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a>
+                            <a href="<?=get_permalink($id)?>"<?=$post->ID == $id ? ' class="active"' : ''?>><?=get_the_title($id)?></a>
                             <?php
                         }
                     ?>
@@ -88,8 +90,8 @@
                     <div class="header__phone-text">
                         <a href="https://api.whatsapp.com/send/?phone=<?=str_replace(['-', '+', '(', ')', ' '], '', get_field('phone', 28))?>" target="_blank" class="text_fz16 text_fw600">
                             <?=get_field('phone', 28)?>
+                            <span class="text_fw500">Заказать звонок</span>
                         </a>
-                        <span class="text_fw500">Заказать звонок</span>
                     </div>
                 </div>
                 <?php endif; ?>
@@ -103,7 +105,7 @@
                 <?php
                     foreach($cards as $id) {
                         ?>
-                        <a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a>
+                        <a href="<?=get_permalink($id)?>"<?=$post->ID == $id ? ' class="active"' : ''?>><?=get_the_title($id)?></a>
                         <?php
                     }
                 ?>

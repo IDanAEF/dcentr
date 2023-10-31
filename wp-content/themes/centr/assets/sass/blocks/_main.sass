@@ -28,14 +28,23 @@
             flex-direction: column
             align-items: flex-start
             justify-content: flex-end
+            .plash 
+                z-index: 1
+                transform: translate(-57%, -57%)
+                transition: 0.6s transform
             &.long 
                 grid-column-start: 1
                 grid-column-end: 3
                 justify-content: center
                 align-items: center
+                .plash 
+                    transform: translate(-57%, -50%)
+            &:hover 
+                .plash 
+                    transform: translate(-50%, -50%) !important
             h3, span 
                 position: relative
-                z-index: 1
+                z-index: 2
     &__news 
         position: relative
         z-index: 2
@@ -734,6 +743,11 @@
                 right: -39px
                 max-width: 368px
                 z-index: 0
+                transition: 0.7s right
+                pointer-events: none 
+            &:hover 
+                .main__works-item-image
+                    right: -10px
     &__form 
         padding: 50px
         border-radius: 50px
