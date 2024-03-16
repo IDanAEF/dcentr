@@ -1,4 +1,4 @@
-<section class="main__reviews" class="reviews">
+<section class="main__reviews" class="reviews" id="reviews">
     <img src="<?=get_template_directory_uri()?>/assets/images/footer-cloud.png" alt="footer-cloud" class="main__rucovod-cloud">
     <div class="container">
         <img src="<?=get_template_directory_uri()?>/assets/images/reviews/review-image.png" alt="Отзывы" class="main__reviews-image">

@@ -59,6 +59,14 @@
             margin-bottom: 40px
         &__list 
             padding-bottom: 50px
+        &__time 
+            margin-right: 20px
+        &__main 
+            flex-direction: column
+            .header__logo 
+                margin-bottom: 20px
+            .header__map
+                margin-right: 20px
     input 
         padding: 15px
     .single-news
@@ -270,6 +278,7 @@
             .container 
                 & > * 
                     margin-right: 15px
+                    font-size: 13px
                     &::after 
                         height: 10px
                         right: -8px
@@ -289,6 +298,9 @@
             img 
                 right: -64px
                 width: 60px
+    .price
+        &__promo
+            padding-top: 150px
     .contacts
         &__promo 
             h1 
@@ -533,6 +545,10 @@
             flex-direction: column
             .header__logo
                 margin-bottom: 20px
+        &__right
+            flex-wrap: wrap
+        &__time 
+            margin-bottom: 20px
     .single-news
         padding-top: 100px
         &__promo h1, &__date, &__detail 
@@ -543,6 +559,19 @@
             &-arrow 
                 width: 140px
                 height: 90px
+    .price
+        &__promo 
+            h1 
+                margin-bottom: 20px
+        &__table 
+            padding: 0
+            .col
+                &1, &3 
+                    width: 28%
+                &2, &4
+                    width: 17%
+            .row 
+                padding: 15px 5%
     .works 
         &__points 
             &-row 
@@ -873,6 +902,12 @@
                 margin-bottom: 20px
                 &:last-child
                     margin-bottom: 0 !important
+    .price
+        &__table 
+            padding-bottom: 15px
+            border-radius: 10px
+            .row 
+                width: 800px
     .works
         &__promo 
             .main__promo
@@ -1197,6 +1232,16 @@
                 right: -37px
                 transform: rotate(-31deg)
                 bottom: 40px
+    .price
+        &__promo
+            padding-top: 100px
+        &__table 
+            font-size: 12px
+            margin-bottom: 50px
+            .row 
+                width: 600px
+                padding-top: 10px
+                padding-bottom: 10px
     .works
         &__promo 
             .main__promo

@@ -9,7 +9,7 @@
 <main class="contacts">
     <section class="contacts__promo">
         <div class="container">
-            <h1 class="text_fz90 text_black text_ffAmat text_fw700 text_center">Контакты</h1>
+            <h1 class="text_fz90 text_black text_ffAmat text_fw700 text_center"><?php the_title() ?></h1>
             <div class="contacts__main">
                 <?php if (get_field('work', 28)) : ?>
                 <div class="footer__time">

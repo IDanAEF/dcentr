@@ -74,6 +74,7 @@
                 <a href="/#stocks">Акции</a>
                 <a href="/#reviews">Отзывы</a>
                 <a href="/#rucovods">Руководители</a>
+                <a href="/price/">Цены</a>
                 <a href="/news/">Новости</a>
                 <a href="/contacts/">Контакты</a>
             </div>

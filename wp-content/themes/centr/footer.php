@@ -46,6 +46,15 @@
                             </div>
                         </div>
                         <?php endif; ?>
+                        <?php if (get_field('email', 28)) : ?>
+                        <a href="mailto:<?=get_field('email', 28)?>" class="footer__time footer__mail">
+                            <img src="<?=$imgPath?>mail.png" alt="work">
+                            <div class="footer__time-text text_fw500">
+                                <span class="text_fw600">E-mail</span>
+                                <?=get_field('email', 28)?>
+                            </div>
+                        </a>
+                        <?php endif; ?>
                         <?php if (get_field('address', 28)) : ?>
                         <a href="<?=get_field('address-link', 28)?>" target="_blank" class="header__map text_fw500">
                             <img src="<?=$imgPath?>map.png" alt="Адрес">
@@ -100,9 +109,10 @@
         <div class="modal__body modal__feedback" id="feedback-modal">
             <img src="<?=$imgPath?>close.svg" alt="close" class="modal__close">
             <?php get_template_part('template-parts/form-default', null, [
-                'title' => 'Запишитесь на пробное занятие',
+                'title' => 'Оставьте свои контактные данные',
                 'id' => 'form-modal',
-                'button' => 'Записаться'
+                'button' => 'Записаться',
+                'half' => true
             ]) ?>
         </div>
         <div class="modal__body modal__success" id="modal__success">

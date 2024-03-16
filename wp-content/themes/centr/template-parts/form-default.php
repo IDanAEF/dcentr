@@ -9,14 +9,16 @@
             <span>Ваш номер</span>
             <input type="tel" name="feedphone" id="feedphone" placeholder="+7 (___) ___-__-__" required>
         </label>
-        <label for="feedage">
-            <span>Возраст ребенка</span>
-            <input type="text" name="feedage" id="feedage" required>
-        </label>
-        <label for="feedhobby">
-            <span>Вид деятельности</span>
-            <input type="text" name="feedhobby" id="feedhobby" required>
-        </label>
+        <?php if (!$args['half']) : ?>
+            <label for="feedage">
+                <span>Возраст ребенка</span>
+                <input type="text" name="feedage" id="feedage" required>
+            </label>
+            <label for="feedhobby">
+                <span>Вид деятельности</span>
+                <input type="text" name="feedhobby" id="feedhobby" required>
+            </label>
+        <?php endif; ?>
         <label for="feedcheck" class="checkbox text_fz12">
             <input type="checkbox" name="feedcheck" id="feedcheck" required>
             <div class="box">✓</div>
