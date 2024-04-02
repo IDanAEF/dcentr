@@ -16,8 +16,9 @@
     <div class="main__rucovod-content text_center">
         <div class="container">
             <div class="main__rucovod-person elem_animate top">
-                <img src="<?=get_template_directory_uri()?>/assets/images/plate.png" alt="plate" class="main__rucovod-person-plate left">
-                <img src="<?=get_template_directory_uri()?>/assets/images/ruc1.png" alt="Кулютникова Анна Сергеевна" class="main__rucovod-person-image">
+                <!-- <img src="<?=get_template_directory_uri()?>/assets/images/plate.png" alt="plate" class="main__rucovod-person-plate left">
+                <img src="<?=get_template_directory_uri()?>/assets/images/ruc1.png" alt="Кулютникова Анна Сергеевна" class="main__rucovod-person-image"> -->
+                <img src="<?=get_template_directory_uri()?>/assets/images/girl3.png" alt="Кулютникова Анна Сергеевна" class="main__rucovod-person-image">
                 <h5 class="text_fz20 text_fw600 text_black">
                     <img src="<?=get_template_directory_uri()?>/assets/images/cloud-name.png" alt="cloud-name">
                     <span>Кулютникова Анна <br>Сергеевна</span>
@@ -27,11 +28,12 @@
                 </div>
             </div>
             <div class="main__rucovod-person elem_animate top">
-                <img src="<?=get_template_directory_uri()?>/assets/images/plate.png" alt="plate" class="main__rucovod-person-plate">
-                <img src="<?=get_template_directory_uri()?>/assets/images/ruc2.png" alt="Коваленко Елена Александровна" class="main__rucovod-person-image right">
+                <!-- <img src="<?=get_template_directory_uri()?>/assets/images/plate.png" alt="plate" class="main__rucovod-person-plate">
+                <img src="<?=get_template_directory_uri()?>/assets/images/ruc2.png" alt="Коваленко Елена Владимировна" class="main__rucovod-person-image right"> -->
+                <img src="<?=get_template_directory_uri()?>/assets/images/girl4.png" alt="Коваленко Елена Владимировна" class="main__rucovod-person-image">
                 <h5 class="text_fz20 text_fw600 text_black">
                     <img src="<?=get_template_directory_uri()?>/assets/images/cloud-name.png" alt="cloud-name" class="right">
-                    <span>Коваленко Елена <br>Александровна</span>
+                    <span>Коваленко Елена <br>Владимировна</span>
                 </h5>
                 <div class="main__rucovod-person-descr">
                     <?=get_field('rucovod_descr2', 10)?>

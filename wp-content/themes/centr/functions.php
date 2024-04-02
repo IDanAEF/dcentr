@@ -39,6 +39,31 @@
     });
 
     function feedback(){
+        $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+        $recaptcha_secret = '6LdTBZspAAAAAFn7YC3gRdyNvfRRynGtrJ2cC2Xq';
+        $recaptcha_response = $_POST['recaptcha'];
+        
+        $ch = curl_init();
+        curl_setopt_array($ch, [
+            CURLOPT_URL => $recaptcha_url,
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => [
+                'secret' => $recaptcha_secret,
+                'response' => $recaptcha_response,
+                'remoteip' => $_SERVER['REMOTE_ADDR']
+            ],
+            CURLOPT_RETURNTRANSFER => true
+        ]);
+        $output = curl_exec($ch);
+        curl_close($ch);
+
+        $recaptcha = json_decode($output);
+
+        if (!($recaptcha->success == true && $recaptcha->score >= 0.6)) {
+            echo "Не пройдена проверка Recaptcha; score: ".$recaptcha->score;
+            die();
+        }
+        
         $names = [
             'feedname' => 'Имя',
             'feedphone' => 'Номер телефона',
@@ -50,8 +75,10 @@
         $text = "";
 
         foreach($_POST as $name => $value) {
-            $meta[$name] = $value;
-            $text .= $names[$name].': '.$value.";\n";
+            if ($names[$name] && $value) {
+                $meta[$name] = $value;
+                $text .= $names[$name].': '.$value.";\n";
+            }
         } 
 
         $post_data = [

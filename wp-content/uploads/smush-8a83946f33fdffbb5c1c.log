@@ -1,0 +1,524 @@
+[2023-10-26 10:05:39 : INFO] - Re_Smush_It_Task with attachment ID : 49, autocreated on : October 26, 2023 10:05:39 
+[2023-10-26 10:05:40 : INFO] - Re_Smush_It_Task with attachment ID : 50, autocreated on : October 26, 2023 10:05:40 
+[2023-10-26 10:05:40 : INFO] - Re_Smush_It_Task with attachment ID : 51, autocreated on : October 26, 2023 10:05:40 
+[2023-10-26 10:05:41 : INFO] - Re_Smush_It_Task with attachment ID : 52, autocreated on : October 26, 2023 10:05:41 
+[2023-10-26 10:05:44 : INFO] - Re_Smush_It_Task with attachment ID : 53, autocreated on : October 26, 2023 10:05:44 
+[2023-10-26 10:05:45 : INFO] - Re_Smush_It_Task with attachment ID : 54, autocreated on : October 26, 2023 10:05:45 
+[2023-10-26 10:05:46 : INFO] - Re_Smush_It_Task with attachment ID : 55, autocreated on : October 26, 2023 10:05:46 
+[2023-10-26 10:11:14 : INFO] - 
+ 
+[2023-10-26 10:11:14 : INFO] - Header for logs at time:  Thu, 26 Oct 2023 10:11:14 +0000 on http://dcentr 
+[2023-10-26 10:11:14 : INFO] - WP: 6.3.2 
+[2023-10-26 10:11:14 : INFO] - PHP: 7.4.30 (apache2handler, Windows NT DESKTOP-CMLCKI0 6.2 build 9200 (Windows 8 Professional Edition) AMD64) 
+[2023-10-26 10:11:14 : INFO] - MySQL: 8.0.30 
+[2023-10-26 10:11:14 : INFO] - WPLANG: ru_RU 
+[2023-10-26 10:11:14 : INFO] - Server: Apache 
+[2023-10-26 10:11:14 : INFO] - Outbound connections: N 
+[2023-10-26 10:11:14 : INFO] - Disabled Functions:  
+[2023-10-26 10:11:14 : INFO] - max_execution_time: 60 
+[2023-10-26 10:11:14 : INFO] - memory_limit: 1536M (used: 41M | 6M) 
+[2023-10-26 10:11:14 : INFO] - multisite: N 
+[2023-10-26 10:11:14 : INFO] - openssl: OpenSSL 1.1.1o  3 May 2022 
+[2023-10-26 10:11:14 : INFO] - A total of 7 tasks of type smush found and will be processed in this iteration 
+[2023-10-26 10:11:14 : DEBUG] - Lock option (updraft_lock_smush, wp_options) was created in the database 
+[2023-10-26 10:11:14 : INFO] - Lock (updraft_lock_smush, wp_options) acquired after initialising the database 
+[2023-10-26 10:11:14 : INFO] - Processing task with ID : 1, and type 'smush' 
+[2023-10-26 10:11:14 : INFO] - Re_Smush_It_Task with attachment ID : 49, autocreated on : October 26, 2023 10:05:39 
+[2023-10-26 10:11:14 : INFO] - File: gal1.jpg, Compression quality: 80 
+[2023-10-26 10:11:15 : INFO] - Backing up the original image - 2023/10/gal1-updraft-pre-smush-original.jpg 
+[2023-10-26 10:11:18 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:11:18 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/gal1.jpg.The file was compressed from 155.60 KB to 155.60 KB, saving 0 percent, using WP-Optimize 
+[2023-10-26 10:11:18 : INFO] - Completed processing task with ID : 1, and type 'smush' 
+[2023-10-26 10:11:18 : INFO] - Processing task with ID : 2, and type 'smush' 
+[2023-10-26 10:11:18 : INFO] - Re_Smush_It_Task with attachment ID : 50, autocreated on : October 26, 2023 10:05:40 
+[2023-10-26 10:11:18 : INFO] - File: gal2.jpg, Compression quality: 80 
+[2023-10-26 10:11:19 : INFO] - Backing up the original image - 2023/10/gal2-updraft-pre-smush-original.jpg 
+[2023-10-26 10:11:20 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:11:20 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/gal2.jpg.The file was compressed from 80.78 KB to 80.78 KB, saving 0 percent, using WP-Optimize 
+[2023-10-26 10:11:20 : INFO] - Completed processing task with ID : 2, and type 'smush' 
+[2023-10-26 10:11:20 : INFO] - Processing task with ID : 3, and type 'smush' 
+[2023-10-26 10:11:20 : INFO] - Re_Smush_It_Task with attachment ID : 51, autocreated on : October 26, 2023 10:05:40 
+[2023-10-26 10:11:20 : INFO] - File: gal3.jpg, Compression quality: 80 
+[2023-10-26 10:11:22 : INFO] - Backing up the original image - 2023/10/gal3-updraft-pre-smush-original.jpg 
+[2023-10-26 10:11:26 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:11:26 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/gal3.jpg.The file was compressed from 146.10 KB to 136.29 KB, saving 6.71 percent, using WP-Optimize 
+[2023-10-26 10:11:26 : INFO] - Completed processing task with ID : 3, and type 'smush' 
+[2023-10-26 10:11:26 : INFO] - Processing task with ID : 4, and type 'smush' 
+[2023-10-26 10:11:26 : INFO] - Re_Smush_It_Task with attachment ID : 52, autocreated on : October 26, 2023 10:05:41 
+[2023-10-26 10:11:26 : INFO] - File: gal4-scaled.jpg, Compression quality: 80 
+[2023-10-26 10:11:27 : INFO] - Backing up the original image - 2023/10/gal4-scaled-updraft-pre-smush-original.jpg 
+[2023-10-26 10:11:32 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:11:32 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/gal4-scaled.jpg.The file was compressed from 244.26 KB to 240.45 KB, saving 1.56 percent, using WP-Optimize 
+[2023-10-26 10:11:32 : INFO] - Completed processing task with ID : 4, and type 'smush' 
+[2023-10-26 10:11:32 : INFO] - Processing task with ID : 5, and type 'smush' 
+[2023-10-26 10:11:32 : INFO] - Re_Smush_It_Task with attachment ID : 53, autocreated on : October 26, 2023 10:05:44 
+[2023-10-26 10:11:32 : INFO] - File: gal5.jpg, Compression quality: 80 
+[2023-10-26 10:11:33 : INFO] - Backing up the original image - 2023/10/gal5-updraft-pre-smush-original.jpg 
+[2023-10-26 10:11:36 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:11:36 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/gal5.jpg.The file was compressed from 180.26 KB to 146.93 KB, saving 18.49 percent, using WP-Optimize 
+[2023-10-26 10:11:36 : INFO] - Completed processing task with ID : 5, and type 'smush' 
+[2023-10-26 10:11:36 : INFO] - Processing task with ID : 6, and type 'smush' 
+[2023-10-26 10:11:36 : INFO] - Re_Smush_It_Task with attachment ID : 54, autocreated on : October 26, 2023 10:05:45 
+[2023-10-26 10:11:36 : INFO] - File: gal6.jpg, Compression quality: 80 
+[2023-10-26 10:11:38 : INFO] - Backing up the original image - 2023/10/gal6-updraft-pre-smush-original.jpg 
+[2023-10-26 10:11:41 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:11:41 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/gal6.jpg.The file was compressed from 159.54 KB to 140.87 KB, saving 11.7 percent, using WP-Optimize 
+[2023-10-26 10:11:41 : INFO] - Completed processing task with ID : 6, and type 'smush' 
+[2023-10-26 10:11:41 : INFO] - Processing task with ID : 7, and type 'smush' 
+[2023-10-26 10:11:41 : INFO] - Re_Smush_It_Task with attachment ID : 55, autocreated on : October 26, 2023 10:05:46 
+[2023-10-26 10:11:41 : INFO] - File: gal7.jpg, Compression quality: 80 
+[2023-10-26 10:11:43 : INFO] - Backing up the original image - 2023/10/gal7-updraft-pre-smush-original.jpg 
+[2023-10-26 10:11:44 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:11:44 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/gal7.jpg.The file was compressed from 57.16 KB to 57.16 KB, saving 0 percent, using WP-Optimize 
+[2023-10-26 10:11:44 : INFO] - Completed processing task with ID : 7, and type 'smush' 
+[2023-10-26 10:11:44 : INFO] - Lock option (updraft_lock_smush, wp_options) released 
+[2023-10-26 10:11:44 : INFO] - Successfully processed the queue (smush). 7 tasks were processed out of 7. 
+[2023-10-26 10:11:44 : INFO] - Lock option (updraft_lock_smush, wp_options) was deleted from the database 
+[2023-10-26 10:11:44 : INFO] - Cleaning up tasks of type (smush). A total of 7 tasks will be deleted. 
+[2023-10-26 10:17:22 : INFO] - Re_Smush_It_Task with attachment ID : 60, autocreated on : October 26, 2023 10:17:22 
+[2023-10-26 10:17:23 : INFO] - Re_Smush_It_Task with attachment ID : 61, autocreated on : October 26, 2023 10:17:23 
+[2023-10-26 10:17:24 : INFO] - Re_Smush_It_Task with attachment ID : 62, autocreated on : October 26, 2023 10:17:24 
+[2023-10-26 10:17:25 : INFO] - Re_Smush_It_Task with attachment ID : 63, autocreated on : October 26, 2023 10:17:25 
+[2023-10-26 10:17:26 : INFO] - Re_Smush_It_Task with attachment ID : 64, autocreated on : October 26, 2023 10:17:26 
+[2023-10-26 10:21:51 : INFO] - 
+ 
+[2023-10-26 10:21:51 : INFO] - Header for logs at time:  Thu, 26 Oct 2023 10:21:51 +0000 on http://dcentr 
+[2023-10-26 10:21:51 : INFO] - WP: 6.3.2 
+[2023-10-26 10:21:51 : INFO] - PHP: 7.4.30 (apache2handler, Windows NT DESKTOP-CMLCKI0 6.2 build 9200 (Windows 8 Professional Edition) AMD64) 
+[2023-10-26 10:21:51 : INFO] - MySQL: 8.0.30 
+[2023-10-26 10:21:51 : INFO] - WPLANG: ru_RU 
+[2023-10-26 10:21:51 : INFO] - Server: Apache 
+[2023-10-26 10:21:51 : INFO] - Outbound connections: N 
+[2023-10-26 10:21:51 : INFO] - Disabled Functions:  
+[2023-10-26 10:21:51 : INFO] - max_execution_time: 60 
+[2023-10-26 10:21:51 : INFO] - memory_limit: 1536M (used: 41M | 6M) 
+[2023-10-26 10:21:51 : INFO] - multisite: N 
+[2023-10-26 10:21:51 : INFO] - openssl: OpenSSL 1.1.1o  3 May 2022 
+[2023-10-26 10:21:51 : INFO] - A total of 5 tasks of type smush found and will be processed in this iteration 
+[2023-10-26 10:21:51 : DEBUG] - Lock option (updraft_lock_smush, wp_options) was created in the database 
+[2023-10-26 10:21:51 : INFO] - Lock (updraft_lock_smush, wp_options) acquired after initialising the database 
+[2023-10-26 10:21:51 : INFO] - Processing task with ID : 8, and type 'smush' 
+[2023-10-26 10:21:51 : INFO] - Re_Smush_It_Task with attachment ID : 60, autocreated on : October 26, 2023 10:17:22 
+[2023-10-26 10:21:51 : INFO] - File: review1.jpg, Compression quality: 80 
+[2023-10-26 10:21:53 : INFO] - Backing up the original image - 2023/10/review1-updraft-pre-smush-original.jpg 
+[2023-10-26 10:21:58 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:21:58 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/review1.jpg.The file was compressed from 152.26 KB to 152.26 KB, saving 0 percent, using WP-Optimize 
+[2023-10-26 10:21:58 : INFO] - Completed processing task with ID : 8, and type 'smush' 
+[2023-10-26 10:21:58 : INFO] - Processing task with ID : 9, and type 'smush' 
+[2023-10-26 10:21:59 : INFO] - Re_Smush_It_Task with attachment ID : 61, autocreated on : October 26, 2023 10:17:23 
+[2023-10-26 10:21:59 : INFO] - File: review2.jpg, Compression quality: 80 
+[2023-10-26 10:22:00 : INFO] - Backing up the original image - 2023/10/review2-updraft-pre-smush-original.jpg 
+[2023-10-26 10:22:03 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:22:03 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/review2.jpg.The file was compressed from 129.58 KB to 116.07 KB, saving 10.43 percent, using WP-Optimize 
+[2023-10-26 10:22:03 : INFO] - Completed processing task with ID : 9, and type 'smush' 
+[2023-10-26 10:22:03 : INFO] - Processing task with ID : 10, and type 'smush' 
+[2023-10-26 10:22:03 : INFO] - Re_Smush_It_Task with attachment ID : 62, autocreated on : October 26, 2023 10:17:24 
+[2023-10-26 10:22:03 : INFO] - File: review3.jpg, Compression quality: 80 
+[2023-10-26 10:22:05 : INFO] - Backing up the original image - 2023/10/review3-updraft-pre-smush-original.jpg 
+[2023-10-26 10:22:08 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:22:08 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/review3.jpg.The file was compressed from 136.45 KB to 123.05 KB, saving 9.82 percent, using WP-Optimize 
+[2023-10-26 10:22:08 : INFO] - Completed processing task with ID : 10, and type 'smush' 
+[2023-10-26 10:22:08 : INFO] - Processing task with ID : 11, and type 'smush' 
+[2023-10-26 10:22:08 : INFO] - Re_Smush_It_Task with attachment ID : 63, autocreated on : October 26, 2023 10:17:25 
+[2023-10-26 10:22:08 : INFO] - File: review4.jpg, Compression quality: 80 
+[2023-10-26 10:22:09 : INFO] - Backing up the original image - 2023/10/review4-updraft-pre-smush-original.jpg 
+[2023-10-26 10:22:14 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:22:14 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/review4.jpg.The file was compressed from 122.18 KB to 109.08 KB, saving 10.72 percent, using WP-Optimize 
+[2023-10-26 10:22:14 : INFO] - Completed processing task with ID : 11, and type 'smush' 
+[2023-10-26 10:22:14 : INFO] - Processing task with ID : 12, and type 'smush' 
+[2023-10-26 10:22:14 : INFO] - Re_Smush_It_Task with attachment ID : 64, autocreated on : October 26, 2023 10:17:26 
+[2023-10-26 10:22:14 : INFO] - File: review5.jpg, Compression quality: 80 
+[2023-10-26 10:22:15 : INFO] - Backing up the original image - 2023/10/review5-updraft-pre-smush-original.jpg 
+[2023-10-26 10:22:18 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-26 10:22:18 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/review5.jpg.The file was compressed from 129.76 KB to 116.15 KB, saving 10.49 percent, using WP-Optimize 
+[2023-10-26 10:22:18 : INFO] - Completed processing task with ID : 12, and type 'smush' 
+[2023-10-26 10:22:18 : INFO] - Lock option (updraft_lock_smush, wp_options) released 
+[2023-10-26 10:22:18 : INFO] - Successfully processed the queue (smush). 5 tasks were processed out of 5. 
+[2023-10-26 10:22:18 : INFO] - Lock option (updraft_lock_smush, wp_options) was deleted from the database 
+[2023-10-26 10:22:18 : INFO] - Cleaning up tasks of type (smush). A total of 5 tasks will be deleted. 
+[2023-10-26 10:32:53 : INFO] - 
+ 
+[2023-10-26 10:32:53 : INFO] - Header for logs at time:  Thu, 26 Oct 2023 10:32:53 +0000 on http://dcentr 
+[2023-10-26 10:32:53 : INFO] - WP: 6.3.2 
+[2023-10-26 10:32:53 : INFO] - PHP: 7.4.30 (apache2handler, Windows NT DESKTOP-CMLCKI0 6.2 build 9200 (Windows 8 Professional Edition) AMD64) 
+[2023-10-26 10:32:53 : INFO] - MySQL: 8.0.30 
+[2023-10-26 10:32:53 : INFO] - WPLANG: ru_RU 
+[2023-10-26 10:32:53 : INFO] - Server: Apache 
+[2023-10-26 10:32:53 : INFO] - Outbound connections: N 
+[2023-10-26 10:32:53 : INFO] - Disabled Functions:  
+[2023-10-26 10:32:53 : INFO] - max_execution_time: 60 
+[2023-10-26 10:32:53 : INFO] - memory_limit: 1536M (used: 41M | 6M) 
+[2023-10-26 10:32:53 : INFO] - multisite: N 
+[2023-10-26 10:32:53 : INFO] - openssl: OpenSSL 1.1.1o  3 May 2022 
+[2023-10-27 15:43:03 : INFO] - Re_Smush_It_Task with attachment ID : 141, autocreated on : October 27, 2023 03:43:03 
+[2023-10-27 15:43:03 : INFO] - Re_Smush_It_Task with attachment ID : 142, autocreated on : October 27, 2023 03:43:03 
+[2023-10-27 15:49:49 : INFO] - 
+ 
+[2023-10-27 15:49:49 : INFO] - Header for logs at time:  Fri, 27 Oct 2023 15:49:49 +0000 on http://dcentr 
+[2023-10-27 15:49:49 : INFO] - WP: 6.3.2 
+[2023-10-27 15:49:49 : INFO] - PHP: 7.4.30 (apache2handler, Windows NT DESKTOP-CMLCKI0 6.2 build 9200 (Windows 8 Professional Edition) AMD64) 
+[2023-10-27 15:49:49 : INFO] - MySQL: 8.0.30 
+[2023-10-27 15:49:49 : INFO] - WPLANG: ru_RU 
+[2023-10-27 15:49:49 : INFO] - Server: Apache 
+[2023-10-27 15:49:49 : INFO] - Outbound connections: N 
+[2023-10-27 15:49:49 : INFO] - Disabled Functions:  
+[2023-10-27 15:49:49 : INFO] - max_execution_time: 60 
+[2023-10-27 15:49:49 : INFO] - memory_limit: 1536M (used: 41M | 6M) 
+[2023-10-27 15:49:49 : INFO] - multisite: N 
+[2023-10-27 15:49:49 : INFO] - openssl: OpenSSL 1.1.1o  3 May 2022 
+[2023-10-27 15:49:49 : INFO] - A total of 2 tasks of type smush found and will be processed in this iteration 
+[2023-10-27 15:49:49 : DEBUG] - Lock option (updraft_lock_smush, wp_options) was created in the database 
+[2023-10-27 15:49:49 : INFO] - Lock (updraft_lock_smush, wp_options) acquired after initialising the database 
+[2023-10-27 15:49:49 : INFO] - Processing task with ID : 13, and type 'smush' 
+[2023-10-27 15:49:49 : INFO] - Re_Smush_It_Task with attachment ID : 141, autocreated on : October 27, 2023 03:43:03 
+[2023-10-27 15:49:49 : INFO] - File: audio1.png, Compression quality: 80 
+[2023-10-27 15:49:49 : INFO] - Backing up the original image - 2023/10/audio1-updraft-pre-smush-original.png 
+[2023-10-27 15:49:49 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-27 15:49:49 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/audio1.png.The file was compressed from 25.77 KB to 9.48 KB, saving 63.23 percent, using WP-Optimize 
+[2023-10-27 15:49:49 : INFO] - Completed processing task with ID : 13, and type 'smush' 
+[2023-10-27 15:49:49 : INFO] - Processing task with ID : 14, and type 'smush' 
+[2023-10-27 15:49:49 : INFO] - Re_Smush_It_Task with attachment ID : 142, autocreated on : October 27, 2023 03:43:03 
+[2023-10-27 15:49:49 : INFO] - File: audio2.png, Compression quality: 80 
+[2023-10-27 15:49:50 : INFO] - Backing up the original image - 2023/10/audio2-updraft-pre-smush-original.png 
+[2023-10-27 15:49:50 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-27 15:49:50 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/audio2.png.The file was compressed from 20.33 KB to 9.04 KB, saving 55.54 percent, using WP-Optimize 
+[2023-10-27 15:49:50 : INFO] - Completed processing task with ID : 14, and type 'smush' 
+[2023-10-27 15:49:50 : INFO] - Lock option (updraft_lock_smush, wp_options) released 
+[2023-10-27 15:49:50 : INFO] - Successfully processed the queue (smush). 2 tasks were processed out of 2. 
+[2023-10-27 15:49:50 : INFO] - Lock option (updraft_lock_smush, wp_options) was deleted from the database 
+[2023-10-27 15:49:50 : INFO] - Cleaning up tasks of type (smush). A total of 2 tasks will be deleted. 
+[2023-10-27 16:03:40 : INFO] - 
+ 
+[2023-10-27 16:03:40 : INFO] - Header for logs at time:  Fri, 27 Oct 2023 16:03:40 +0000 on http://dcentr 
+[2023-10-27 16:03:40 : INFO] - WP: 6.3.2 
+[2023-10-27 16:03:40 : INFO] - PHP: 7.4.30 (apache2handler, Windows NT DESKTOP-CMLCKI0 6.2 build 9200 (Windows 8 Professional Edition) AMD64) 
+[2023-10-27 16:03:40 : INFO] - MySQL: 8.0.30 
+[2023-10-27 16:03:40 : INFO] - WPLANG: ru_RU 
+[2023-10-27 16:03:40 : INFO] - Server: Apache 
+[2023-10-27 16:03:40 : INFO] - Outbound connections: N 
+[2023-10-27 16:03:40 : INFO] - Disabled Functions:  
+[2023-10-27 16:03:40 : INFO] - max_execution_time: 60 
+[2023-10-27 16:03:40 : INFO] - memory_limit: 1536M (used: 41M | 6M) 
+[2023-10-27 16:03:40 : INFO] - multisite: N 
+[2023-10-27 16:03:40 : INFO] - openssl: OpenSSL 1.1.1o  3 May 2022 
+[2023-10-28 06:11:29 : INFO] - Re_Smush_It_Task with attachment ID : 152, autocreated on : October 28, 2023 06:11:29 
+[2023-10-28 06:11:30 : INFO] - Re_Smush_It_Task with attachment ID : 153, autocreated on : October 28, 2023 06:11:30 
+[2023-10-28 06:11:31 : INFO] - Re_Smush_It_Task with attachment ID : 154, autocreated on : October 28, 2023 06:11:31 
+[2023-10-28 06:16:35 : INFO] - 
+ 
+[2023-10-28 06:16:35 : INFO] - Header for logs at time:  Sat, 28 Oct 2023 06:16:35 +0000 on http://dcentr 
+[2023-10-28 06:16:35 : INFO] - WP: 6.3.2 
+[2023-10-28 06:16:35 : INFO] - PHP: 7.4.30 (apache2handler, Windows NT DESKTOP-CMLCKI0 6.2 build 9200 (Windows 8 Professional Edition) AMD64) 
+[2023-10-28 06:16:35 : INFO] - MySQL: 8.0.30 
+[2023-10-28 06:16:35 : INFO] - WPLANG: ru_RU 
+[2023-10-28 06:16:35 : INFO] - Server: Apache 
+[2023-10-28 06:16:35 : INFO] - Outbound connections: N 
+[2023-10-28 06:16:35 : INFO] - Disabled Functions:  
+[2023-10-28 06:16:35 : INFO] - max_execution_time: 60 
+[2023-10-28 06:16:35 : INFO] - memory_limit: 1536M (used: 41.5M | 26M) 
+[2023-10-28 06:16:35 : INFO] - multisite: N 
+[2023-10-28 06:16:35 : INFO] - openssl: OpenSSL 1.1.1o  3 May 2022 
+[2023-10-28 06:16:35 : INFO] - A total of 3 tasks of type smush found and will be processed in this iteration 
+[2023-10-28 06:16:35 : DEBUG] - Lock option (updraft_lock_smush, wp_options) was created in the database 
+[2023-10-28 06:16:35 : INFO] - Lock (updraft_lock_smush, wp_options) acquired after initialising the database 
+[2023-10-28 06:16:35 : INFO] - Processing task with ID : 15, and type 'smush' 
+[2023-10-28 06:16:35 : INFO] - Re_Smush_It_Task with attachment ID : 152, autocreated on : October 28, 2023 06:11:29 
+[2023-10-28 06:16:35 : INFO] - File: news1.jpg, Compression quality: 80 
+[2023-10-28 06:16:37 : INFO] - Backing up the original image - 2023/10/news1-updraft-pre-smush-original.jpg 
+[2023-10-28 06:16:40 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-28 06:16:40 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/news1.jpg.The file was compressed from 970.35 KB to 166.05 KB, saving 82.89 percent, using WP-Optimize 
+[2023-10-28 06:16:40 : INFO] - Completed processing task with ID : 15, and type 'smush' 
+[2023-10-28 06:16:40 : INFO] - Processing task with ID : 16, and type 'smush' 
+[2023-10-28 06:16:40 : INFO] - Re_Smush_It_Task with attachment ID : 153, autocreated on : October 28, 2023 06:11:30 
+[2023-10-28 06:16:40 : INFO] - File: news2.jpg, Compression quality: 80 
+[2023-10-28 06:16:42 : INFO] - Backing up the original image - 2023/10/news2-updraft-pre-smush-original.jpg 
+[2023-10-28 06:16:45 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-28 06:16:45 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/news2.jpg.The file was compressed from 1.10 MB to 212.97 KB, saving 81.17 percent, using WP-Optimize 
+[2023-10-28 06:16:45 : INFO] - Completed processing task with ID : 16, and type 'smush' 
+[2023-10-28 06:16:45 : INFO] - Processing task with ID : 17, and type 'smush' 
+[2023-10-28 06:16:45 : INFO] - Re_Smush_It_Task with attachment ID : 154, autocreated on : October 28, 2023 06:11:31 
+[2023-10-28 06:16:45 : INFO] - File: news3.jpg, Compression quality: 80 
+[2023-10-28 06:16:46 : INFO] - Backing up the original image - 2023/10/news3-updraft-pre-smush-original.jpg 
+[2023-10-28 06:16:49 : INFO] - There were no WebP conversion tools found on your server. 
+[2023-10-28 06:16:49 : INFO] - Successfully optimized the image - C:\Users\IDanAEF\Documents\OSPanel\domains\dcentr/wp-content/uploads/2023/10/news3.jpg.The file was compressed from 609.89 KB to 114.29 KB, saving 81.26 percent, using WP-Optimize 
+[2023-10-28 06:16:49 : INFO] - Completed processing task with ID : 17, and type 'smush' 
+[2023-10-28 06:16:49 : INFO] - Lock option (updraft_lock_smush, wp_options) released 
+[2023-10-28 06:16:49 : INFO] - Successfully processed the queue (smush). 3 tasks were processed out of 3. 
+[2023-10-28 06:16:49 : INFO] - Lock option (updraft_lock_smush, wp_options) was deleted from the database 
+[2023-10-28 06:16:49 : INFO] - Cleaning up tasks of type (smush). A total of 3 tasks will be deleted. 
+[2023-10-28 06:27:37 : INFO] - 
+ 
+[2023-10-28 06:27:37 : INFO] - Header for logs at time:  Sat, 28 Oct 2023 06:27:37 +0000 on http://dcentr 
+[2023-10-28 06:27:37 : INFO] - WP: 6.3.2 
+[2023-10-28 06:27:37 : INFO] - PHP: 7.4.30 (apache2handler, Windows NT DESKTOP-CMLCKI0 6.2 build 9200 (Windows 8 Professional Edition) AMD64) 
+[2023-10-28 06:27:37 : INFO] - MySQL: 8.0.30 
+[2023-10-28 06:27:37 : INFO] - WPLANG: ru_RU 
+[2023-10-28 06:27:37 : INFO] - Server: Apache 
+[2023-10-28 06:27:37 : INFO] - Outbound connections: N 
+[2023-10-28 06:27:37 : INFO] - Disabled Functions:  
+[2023-10-28 06:27:37 : INFO] - max_execution_time: 60 
+[2023-10-28 06:27:37 : INFO] - memory_limit: 1536M (used: 41M | 6M) 
+[2023-10-28 06:27:37 : INFO] - multisite: N 
+[2023-10-28 06:27:37 : INFO] - openssl: OpenSSL 1.1.1o  3 May 2022 
+[2024-03-31 06:38:24 : INFO] - Re_Smush_It_Task with attachment ID : 207, autocreated on : March 31, 2024 06:38:24 
+[2024-03-31 06:38:31 : INFO] - Re_Smush_It_Task with attachment ID : 208, autocreated on : March 31, 2024 06:38:31 
+[2024-03-31 06:38:38 : INFO] - Re_Smush_It_Task with attachment ID : 209, autocreated on : March 31, 2024 06:38:38 
+[2024-03-31 06:44:06 : INFO] - 
+ 
+[2024-03-31 06:44:06 : INFO] - Header for logs at time:  Sun, 31 Mar 2024 06:44:06 +0000 on http://dcentr.efremisdenov.ru 
+[2024-03-31 06:44:06 : INFO] - WP: 6.4.3 
+[2024-03-31 06:44:06 : INFO] - PHP: 7.4.33 (cgi-fcgi, Linux s14.link-host.net 3.10.0-1160.95.1.el7.x86_64 #1 SMP Mon Jul 24 13:59:37 UTC 2023 x86_64) 
+[2024-03-31 06:44:06 : INFO] - MySQL: 5.5.68 
+[2024-03-31 06:44:06 : INFO] - WPLANG: ru_RU 
+[2024-03-31 06:44:06 : INFO] - Server: Apache/2.4.6 (CentOS) mpm-itk/2.4.7-04 OpenSSL/1.0.2k-fips PHP/5.4.16 
+[2024-03-31 06:44:06 : INFO] - Outbound connections: N 
+[2024-03-31 06:44:06 : INFO] - Disabled Functions:  
+[2024-03-31 06:44:06 : INFO] - max_execution_time: 30 
+[2024-03-31 06:44:06 : INFO] - memory_limit: 512M (used: 12.6M | 16M) 
+[2024-03-31 06:44:06 : INFO] - multisite: N 
+[2024-03-31 06:44:06 : INFO] - openssl: OpenSSL 1.0.2k  26 Jan 2017 
+[2024-03-31 06:44:06 : INFO] - A total of 3 tasks of type smush found and will be processed in this iteration 
+[2024-03-31 06:44:06 : DEBUG] - Lock option (updraft_lock_smush, wp_options) was created in the database 
+[2024-03-31 06:44:06 : INFO] - Lock (updraft_lock_smush, wp_options) acquired after initialising the database 
+[2024-03-31 06:44:06 : INFO] - Processing task with ID : 18, and type 'smush' 
+[2024-03-31 06:44:06 : INFO] - Re_Smush_It_Task with attachment ID : 207, autocreated on : March 31, 2024 06:38:24 
+[2024-03-31 06:44:06 : INFO] - File: phone-2.png, Compression quality: 80 
+[2024-03-31 06:44:07 : INFO] - Backing up the original image - 2024/03/phone-2-updraft-pre-smush-original.png 
+[2024-03-31 06:44:09 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-03-31 06:44:09 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/03/phone-2.png.Файл был сжат с 444.97 KB до 444.97 KB, сохранив 0 процентов, с помощью WP-Optimize 
+[2024-03-31 06:44:09 : INFO] - Completed processing task with ID : 18, and type 'smush' 
+[2024-03-31 06:44:09 : INFO] - Processing task with ID : 19, and type 'smush' 
+[2024-03-31 06:44:09 : INFO] - Re_Smush_It_Task with attachment ID : 208, autocreated on : March 31, 2024 06:38:31 
+[2024-03-31 06:44:09 : INFO] - File: phone-3.png, Compression quality: 80 
+[2024-03-31 06:44:09 : INFO] - Backing up the original image - 2024/03/phone-3-updraft-pre-smush-original.png 
+[2024-03-31 06:44:11 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-03-31 06:44:11 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/03/phone-3.png.Файл был сжат с 438.71 KB до 438.71 KB, сохранив 0 процентов, с помощью WP-Optimize 
+[2024-03-31 06:44:11 : INFO] - Completed processing task with ID : 19, and type 'smush' 
+[2024-03-31 06:44:11 : INFO] - Processing task with ID : 20, and type 'smush' 
+[2024-03-31 06:44:11 : INFO] - Re_Smush_It_Task with attachment ID : 209, autocreated on : March 31, 2024 06:38:38 
+[2024-03-31 06:44:11 : INFO] - File: phone-4.png, Compression quality: 80 
+[2024-03-31 06:44:12 : INFO] - Backing up the original image - 2024/03/phone-4-updraft-pre-smush-original.png 
+[2024-03-31 06:44:13 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-03-31 06:44:13 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/03/phone-4.png.Файл был сжат с 448.42 KB до 448.42 KB, сохранив 0 процентов, с помощью WP-Optimize 
+[2024-03-31 06:44:13 : INFO] - Completed processing task with ID : 20, and type 'smush' 
+[2024-03-31 06:44:13 : INFO] - Lock option (updraft_lock_smush, wp_options) released 
+[2024-03-31 06:44:13 : INFO] - Successfully processed the queue (smush). 3 tasks were processed out of 3. 
+[2024-03-31 06:44:13 : INFO] - Lock option (updraft_lock_smush, wp_options) was deleted from the database 
+[2024-03-31 06:44:13 : INFO] - Cleaning up tasks of type (smush). A total of 3 tasks will be deleted. 
+[2024-03-31 06:54:44 : INFO] - 
+ 
+[2024-03-31 06:54:44 : INFO] - Header for logs at time:  Sun, 31 Mar 2024 06:54:44 +0000 on http://dcentr.efremisdenov.ru 
+[2024-03-31 06:54:44 : INFO] - WP: 6.4.3 
+[2024-03-31 06:54:44 : INFO] - PHP: 7.4.33 (cgi-fcgi, Linux s14.link-host.net 3.10.0-1160.95.1.el7.x86_64 #1 SMP Mon Jul 24 13:59:37 UTC 2023 x86_64) 
+[2024-03-31 06:54:44 : INFO] - MySQL: 5.5.68 
+[2024-03-31 06:54:44 : INFO] - WPLANG: ru_RU 
+[2024-03-31 06:54:44 : INFO] - Server: Apache/2.4.6 (CentOS) mpm-itk/2.4.7-04 OpenSSL/1.0.2k-fips PHP/5.4.16 
+[2024-03-31 06:54:44 : INFO] - Outbound connections: N 
+[2024-03-31 06:54:44 : INFO] - Disabled Functions:  
+[2024-03-31 06:54:44 : INFO] - max_execution_time: 30 
+[2024-03-31 06:54:44 : INFO] - memory_limit: 512M (used: 12.6M | 16M) 
+[2024-03-31 06:54:44 : INFO] - multisite: N 
+[2024-03-31 06:54:44 : INFO] - openssl: OpenSSL 1.0.2k  26 Jan 2017 
+[2024-04-01 10:53:47 : INFO] - Re_Smush_It_Task with attachment ID : 219, autocreated on : April 01, 2024 10:53:47 
+[2024-04-01 10:53:48 : INFO] - Re_Smush_It_Task with attachment ID : 220, autocreated on : April 01, 2024 10:53:48 
+[2024-04-01 10:53:50 : INFO] - Re_Smush_It_Task with attachment ID : 221, autocreated on : April 01, 2024 10:53:50 
+[2024-04-01 10:53:51 : INFO] - Re_Smush_It_Task with attachment ID : 222, autocreated on : April 01, 2024 10:53:51 
+[2024-04-01 10:53:53 : INFO] - Re_Smush_It_Task with attachment ID : 223, autocreated on : April 01, 2024 10:53:53 
+[2024-04-01 10:53:54 : INFO] - Re_Smush_It_Task with attachment ID : 224, autocreated on : April 01, 2024 10:53:54 
+[2024-04-01 10:53:55 : INFO] - Re_Smush_It_Task with attachment ID : 225, autocreated on : April 01, 2024 10:53:55 
+[2024-04-01 10:53:56 : INFO] - Re_Smush_It_Task with attachment ID : 226, autocreated on : April 01, 2024 10:53:56 
+[2024-04-01 10:53:57 : INFO] - Re_Smush_It_Task with attachment ID : 227, autocreated on : April 01, 2024 10:53:57 
+[2024-04-01 10:53:58 : INFO] - Re_Smush_It_Task with attachment ID : 228, autocreated on : April 01, 2024 10:53:58 
+[2024-04-01 10:53:59 : INFO] - Re_Smush_It_Task with attachment ID : 229, autocreated on : April 01, 2024 10:53:59 
+[2024-04-01 10:54:00 : INFO] - Re_Smush_It_Task with attachment ID : 230, autocreated on : April 01, 2024 10:54:00 
+[2024-04-01 10:54:02 : INFO] - Re_Smush_It_Task with attachment ID : 231, autocreated on : April 01, 2024 10:54:02 
+[2024-04-01 10:54:03 : INFO] - Re_Smush_It_Task with attachment ID : 232, autocreated on : April 01, 2024 10:54:03 
+[2024-04-01 10:54:05 : INFO] - Re_Smush_It_Task with attachment ID : 233, autocreated on : April 01, 2024 10:54:05 
+[2024-04-01 10:54:06 : INFO] - Re_Smush_It_Task with attachment ID : 234, autocreated on : April 01, 2024 10:54:06 
+[2024-04-01 10:54:07 : INFO] - Re_Smush_It_Task with attachment ID : 235, autocreated on : April 01, 2024 10:54:07 
+[2024-04-01 10:54:08 : INFO] - Re_Smush_It_Task with attachment ID : 236, autocreated on : April 01, 2024 10:54:08 
+[2024-04-01 10:54:09 : INFO] - Re_Smush_It_Task with attachment ID : 237, autocreated on : April 01, 2024 10:54:09 
+[2024-04-01 10:54:10 : INFO] - Re_Smush_It_Task with attachment ID : 238, autocreated on : April 01, 2024 10:54:10 
+[2024-04-01 10:54:11 : INFO] - Re_Smush_It_Task with attachment ID : 239, autocreated on : April 01, 2024 10:54:11 
+[2024-04-01 10:58:52 : INFO] - 
+ 
+[2024-04-01 10:58:52 : INFO] - Header for logs at time:  Mon, 01 Apr 2024 10:58:52 +0000 on http://dcentr.efremisdenov.ru 
+[2024-04-01 10:58:52 : INFO] - WP: 6.4.3 
+[2024-04-01 10:58:52 : INFO] - PHP: 7.4.33 (cgi-fcgi, Linux s14.link-host.net 3.10.0-1160.95.1.el7.x86_64 #1 SMP Mon Jul 24 13:59:37 UTC 2023 x86_64) 
+[2024-04-01 10:58:52 : INFO] - MySQL: 5.5.68 
+[2024-04-01 10:58:52 : INFO] - WPLANG: ru_RU 
+[2024-04-01 10:58:52 : INFO] - Server: Apache/2.4.6 (CentOS) mpm-itk/2.4.7-04 OpenSSL/1.0.2k-fips PHP/5.4.16 
+[2024-04-01 10:58:52 : INFO] - Outbound connections: N 
+[2024-04-01 10:58:52 : INFO] - Disabled Functions:  
+[2024-04-01 10:58:52 : INFO] - max_execution_time: 30 
+[2024-04-01 10:58:52 : INFO] - memory_limit: 512M (used: 12.6M | 16M) 
+[2024-04-01 10:58:52 : INFO] - multisite: N 
+[2024-04-01 10:58:52 : INFO] - openssl: OpenSSL 1.0.2k  26 Jan 2017 
+[2024-04-01 10:58:52 : INFO] - A total of 21 tasks of type smush found and will be processed in this iteration 
+[2024-04-01 10:58:52 : DEBUG] - Lock option (updraft_lock_smush, wp_options) was created in the database 
+[2024-04-01 10:58:52 : INFO] - Lock (updraft_lock_smush, wp_options) acquired after initialising the database 
+[2024-04-01 10:58:52 : INFO] - Processing task with ID : 21, and type 'smush' 
+[2024-04-01 10:58:52 : INFO] - Re_Smush_It_Task with attachment ID : 219, autocreated on : April 01, 2024 10:53:47 
+[2024-04-01 10:58:52 : INFO] - File: photo_1_2024-04-01_13-51-50.jpg, Compression quality: 80 
+[2024-04-01 10:58:52 : INFO] - Backing up the original image - 2024/04/photo_1_2024-04-01_13-51-50-updraft-pre-smush-original.jpg 
+[2024-04-01 10:58:53 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:58:53 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_1_2024-04-01_13-51-50.jpg.Файл был сжат с 141.83 KB до 125.31 KB, сохранив 11.65 процентов, с помощью WP-Optimize 
+[2024-04-01 10:58:53 : INFO] - Completed processing task with ID : 21, and type 'smush' 
+[2024-04-01 10:58:53 : INFO] - Processing task with ID : 22, and type 'smush' 
+[2024-04-01 10:58:53 : INFO] - Re_Smush_It_Task with attachment ID : 220, autocreated on : April 01, 2024 10:53:48 
+[2024-04-01 10:58:53 : INFO] - File: photo_1_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:58:54 : INFO] - Backing up the original image - 2024/04/photo_1_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:58:54 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:58:54 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_1_2024-04-01_13-52-05.jpg.Файл был сжат с 170.51 KB до 151.04 KB, сохранив 11.42 процентов, с помощью WP-Optimize 
+[2024-04-01 10:58:54 : INFO] - Completed processing task with ID : 22, and type 'smush' 
+[2024-04-01 10:58:54 : INFO] - Processing task with ID : 23, and type 'smush' 
+[2024-04-01 10:58:54 : INFO] - Re_Smush_It_Task with attachment ID : 221, autocreated on : April 01, 2024 10:53:50 
+[2024-04-01 10:58:54 : INFO] - File: photo_2_2024-04-01_13-51-50.jpg, Compression quality: 80 
+[2024-04-01 10:58:54 : INFO] - Backing up the original image - 2024/04/photo_2_2024-04-01_13-51-50-updraft-pre-smush-original.jpg 
+[2024-04-01 10:58:55 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:58:55 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_2_2024-04-01_13-51-50.jpg.Файл был сжат с 145.17 KB до 127.30 KB, сохранив 12.31 процентов, с помощью WP-Optimize 
+[2024-04-01 10:58:55 : INFO] - Completed processing task with ID : 23, and type 'smush' 
+[2024-04-01 10:58:55 : INFO] - Processing task with ID : 24, and type 'smush' 
+[2024-04-01 10:58:55 : INFO] - Re_Smush_It_Task with attachment ID : 222, autocreated on : April 01, 2024 10:53:51 
+[2024-04-01 10:58:55 : INFO] - File: photo_2_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:58:56 : INFO] - Backing up the original image - 2024/04/photo_2_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:58:56 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:58:56 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_2_2024-04-01_13-52-05.jpg.Файл был сжат с 178.73 KB до 154.81 KB, сохранив 13.38 процентов, с помощью WP-Optimize 
+[2024-04-01 10:58:57 : INFO] - Completed processing task with ID : 24, and type 'smush' 
+[2024-04-01 10:58:57 : INFO] - Processing task with ID : 25, and type 'smush' 
+[2024-04-01 10:58:57 : INFO] - Re_Smush_It_Task with attachment ID : 223, autocreated on : April 01, 2024 10:53:53 
+[2024-04-01 10:58:57 : INFO] - File: photo_3_2024-04-01_13-51-50.jpg, Compression quality: 80 
+[2024-04-01 10:58:57 : INFO] - Backing up the original image - 2024/04/photo_3_2024-04-01_13-51-50-updraft-pre-smush-original.jpg 
+[2024-04-01 10:58:57 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:58:57 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_3_2024-04-01_13-51-50.jpg.Файл был сжат с 138.20 KB до 120.67 KB, сохранив 12.69 процентов, с помощью WP-Optimize 
+[2024-04-01 10:58:57 : INFO] - Completed processing task with ID : 25, and type 'smush' 
+[2024-04-01 10:58:57 : INFO] - Processing task with ID : 26, and type 'smush' 
+[2024-04-01 10:58:57 : INFO] - Re_Smush_It_Task with attachment ID : 224, autocreated on : April 01, 2024 10:53:54 
+[2024-04-01 10:58:57 : INFO] - File: photo_3_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:58:58 : INFO] - Backing up the original image - 2024/04/photo_3_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:58:58 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:58:58 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_3_2024-04-01_13-52-05.jpg.Файл был сжат с 192.96 KB до 168.46 KB, сохранив 12.7 процентов, с помощью WP-Optimize 
+[2024-04-01 10:58:58 : INFO] - Completed processing task with ID : 26, and type 'smush' 
+[2024-04-01 10:58:58 : INFO] - Processing task with ID : 27, and type 'smush' 
+[2024-04-01 10:58:58 : INFO] - Re_Smush_It_Task with attachment ID : 225, autocreated on : April 01, 2024 10:53:55 
+[2024-04-01 10:58:58 : INFO] - File: photo_4_2024-04-01_13-51-50.jpg, Compression quality: 80 
+[2024-04-01 10:58:59 : INFO] - Backing up the original image - 2024/04/photo_4_2024-04-01_13-51-50-updraft-pre-smush-original.jpg 
+[2024-04-01 10:58:59 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:58:59 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_4_2024-04-01_13-51-50.jpg.Файл был сжат с 147.00 KB до 128.38 KB, сохранив 12.66 процентов, с помощью WP-Optimize 
+[2024-04-01 10:58:59 : INFO] - Completed processing task with ID : 27, and type 'smush' 
+[2024-04-01 10:58:59 : INFO] - Processing task with ID : 28, and type 'smush' 
+[2024-04-01 10:58:59 : INFO] - Re_Smush_It_Task with attachment ID : 226, autocreated on : April 01, 2024 10:53:56 
+[2024-04-01 10:58:59 : INFO] - File: photo_4_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:58:59 : INFO] - Backing up the original image - 2024/04/photo_4_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:00 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:00 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_4_2024-04-01_13-52-05.jpg.Файл был сжат с 187.18 KB до 162.91 KB, сохранив 12.97 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:00 : INFO] - Completed processing task with ID : 28, and type 'smush' 
+[2024-04-01 10:59:00 : INFO] - Processing task with ID : 29, and type 'smush' 
+[2024-04-01 10:59:00 : INFO] - Re_Smush_It_Task with attachment ID : 227, autocreated on : April 01, 2024 10:53:57 
+[2024-04-01 10:59:00 : INFO] - File: photo_5_2024-04-01_13-51-50.jpg, Compression quality: 80 
+[2024-04-01 10:59:00 : INFO] - Backing up the original image - 2024/04/photo_5_2024-04-01_13-51-50-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:01 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:01 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_5_2024-04-01_13-51-50.jpg.Файл был сжат с 115.12 KB до 99.03 KB, сохранив 13.98 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:01 : INFO] - Completed processing task with ID : 29, and type 'smush' 
+[2024-04-01 10:59:01 : INFO] - Processing task with ID : 30, and type 'smush' 
+[2024-04-01 10:59:01 : INFO] - Re_Smush_It_Task with attachment ID : 228, autocreated on : April 01, 2024 10:53:58 
+[2024-04-01 10:59:01 : INFO] - File: photo_5_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:59:02 : INFO] - Backing up the original image - 2024/04/photo_5_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:02 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:02 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_5_2024-04-01_13-52-05.jpg.Файл был сжат с 351.96 KB до 305.33 KB, сохранив 13.25 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:02 : INFO] - Completed processing task with ID : 30, and type 'smush' 
+[2024-04-01 10:59:02 : INFO] - Processing task with ID : 31, and type 'smush' 
+[2024-04-01 10:59:02 : INFO] - Re_Smush_It_Task with attachment ID : 229, autocreated on : April 01, 2024 10:53:59 
+[2024-04-01 10:59:02 : INFO] - File: photo_6_2024-04-01_13-51-50.jpg, Compression quality: 80 
+[2024-04-01 10:59:02 : INFO] - Backing up the original image - 2024/04/photo_6_2024-04-01_13-51-50-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:03 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:03 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_6_2024-04-01_13-51-50.jpg.Файл был сжат с 129.55 KB до 114.45 KB, сохранив 11.65 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:03 : INFO] - Completed processing task with ID : 31, and type 'smush' 
+[2024-04-01 10:59:03 : INFO] - Processing task with ID : 32, and type 'smush' 
+[2024-04-01 10:59:03 : INFO] - Re_Smush_It_Task with attachment ID : 230, autocreated on : April 01, 2024 10:54:00 
+[2024-04-01 10:59:03 : INFO] - File: photo_6_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:59:03 : INFO] - Backing up the original image - 2024/04/photo_6_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:04 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:04 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_6_2024-04-01_13-52-05.jpg.Файл был сжат с 150.70 KB до 129.65 KB, сохранив 13.96 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:04 : INFO] - Completed processing task with ID : 32, and type 'smush' 
+[2024-04-01 10:59:04 : INFO] - Processing task with ID : 33, and type 'smush' 
+[2024-04-01 10:59:04 : INFO] - Re_Smush_It_Task with attachment ID : 231, autocreated on : April 01, 2024 10:54:02 
+[2024-04-01 10:59:04 : INFO] - File: photo_7_2024-04-01_13-51-50.jpg, Compression quality: 80 
+[2024-04-01 10:59:04 : INFO] - Backing up the original image - 2024/04/photo_7_2024-04-01_13-51-50-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:05 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:05 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_7_2024-04-01_13-51-50.jpg.Файл был сжат с 163.99 KB до 143.80 KB, сохранив 12.31 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:05 : INFO] - Completed processing task with ID : 33, and type 'smush' 
+[2024-04-01 10:59:05 : INFO] - Processing task with ID : 34, and type 'smush' 
+[2024-04-01 10:59:05 : INFO] - Re_Smush_It_Task with attachment ID : 232, autocreated on : April 01, 2024 10:54:03 
+[2024-04-01 10:59:05 : INFO] - File: photo_7_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:59:05 : INFO] - Backing up the original image - 2024/04/photo_7_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:06 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:06 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_7_2024-04-01_13-52-05.jpg.Файл был сжат с 190.30 KB до 166.42 KB, сохранив 12.55 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:06 : INFO] - Completed processing task with ID : 34, and type 'smush' 
+[2024-04-01 10:59:06 : INFO] - Processing task with ID : 35, and type 'smush' 
+[2024-04-01 10:59:06 : INFO] - Re_Smush_It_Task with attachment ID : 233, autocreated on : April 01, 2024 10:54:05 
+[2024-04-01 10:59:06 : INFO] - File: photo_8_2024-04-01_13-51-50.jpg, Compression quality: 80 
+[2024-04-01 10:59:06 : INFO] - Backing up the original image - 2024/04/photo_8_2024-04-01_13-51-50-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:06 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:07 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_8_2024-04-01_13-51-50.jpg.Файл был сжат с 98.62 KB до 86.92 KB, сохранив 11.87 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:07 : INFO] - Completed processing task with ID : 35, and type 'smush' 
+[2024-04-01 10:59:07 : INFO] - Processing task with ID : 36, and type 'smush' 
+[2024-04-01 10:59:07 : INFO] - Re_Smush_It_Task with attachment ID : 234, autocreated on : April 01, 2024 10:54:06 
+[2024-04-01 10:59:07 : INFO] - File: photo_8_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:59:07 : INFO] - Backing up the original image - 2024/04/photo_8_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:07 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:07 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_8_2024-04-01_13-52-05.jpg.Файл был сжат с 180.96 KB до 157.71 KB, сохранив 12.85 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:07 : INFO] - Completed processing task with ID : 36, and type 'smush' 
+[2024-04-01 10:59:07 : INFO] - Processing task with ID : 37, and type 'smush' 
+[2024-04-01 10:59:07 : INFO] - Re_Smush_It_Task with attachment ID : 235, autocreated on : April 01, 2024 10:54:07 
+[2024-04-01 10:59:07 : INFO] - File: photo_9_2024-04-01_13-51-50.jpg, Compression quality: 80 
+[2024-04-01 10:59:08 : INFO] - Backing up the original image - 2024/04/photo_9_2024-04-01_13-51-50-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:08 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:08 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_9_2024-04-01_13-51-50.jpg.Файл был сжат с 106.63 KB до 93.96 KB, сохранив 11.88 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:09 : INFO] - Completed processing task with ID : 37, and type 'smush' 
+[2024-04-01 10:59:09 : INFO] - Processing task with ID : 38, and type 'smush' 
+[2024-04-01 10:59:09 : INFO] - Re_Smush_It_Task with attachment ID : 236, autocreated on : April 01, 2024 10:54:08 
+[2024-04-01 10:59:09 : INFO] - File: photo_9_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:59:09 : INFO] - Backing up the original image - 2024/04/photo_9_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:09 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:09 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_9_2024-04-01_13-52-05.jpg.Файл был сжат с 158.77 KB до 138.51 KB, сохранив 12.76 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:09 : INFO] - Completed processing task with ID : 38, and type 'smush' 
+[2024-04-01 10:59:09 : INFO] - Processing task with ID : 39, and type 'smush' 
+[2024-04-01 10:59:09 : INFO] - Re_Smush_It_Task with attachment ID : 237, autocreated on : April 01, 2024 10:54:09 
+[2024-04-01 10:59:09 : INFO] - File: photo_10_2024-04-01_13-51-50.jpg, Compression quality: 80 
+[2024-04-01 10:59:10 : INFO] - Backing up the original image - 2024/04/photo_10_2024-04-01_13-51-50-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:10 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:10 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_10_2024-04-01_13-51-50.jpg.Файл был сжат с 102.10 KB до 89.78 KB, сохранив 12.07 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:10 : INFO] - Completed processing task with ID : 39, and type 'smush' 
+[2024-04-01 10:59:10 : INFO] - Processing task with ID : 40, and type 'smush' 
+[2024-04-01 10:59:10 : INFO] - Re_Smush_It_Task with attachment ID : 238, autocreated on : April 01, 2024 10:54:10 
+[2024-04-01 10:59:10 : INFO] - File: photo_10_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:59:11 : INFO] - Backing up the original image - 2024/04/photo_10_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:11 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:11 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_10_2024-04-01_13-52-05.jpg.Файл был сжат с 221.50 KB до 191.39 KB, сохранив 13.59 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:11 : INFO] - Completed processing task with ID : 40, and type 'smush' 
+[2024-04-01 10:59:11 : INFO] - Processing task with ID : 41, and type 'smush' 
+[2024-04-01 10:59:11 : INFO] - Re_Smush_It_Task with attachment ID : 239, autocreated on : April 01, 2024 10:54:11 
+[2024-04-01 10:59:11 : INFO] - File: photo_11_2024-04-01_13-52-05.jpg, Compression quality: 80 
+[2024-04-01 10:59:12 : INFO] - Backing up the original image - 2024/04/photo_11_2024-04-01_13-52-05-updraft-pre-smush-original.jpg 
+[2024-04-01 10:59:12 : INFO] - There were no WebP conversion tools found on your server. 
+[2024-04-01 10:59:12 : INFO] - Successfully optimized the image - /var/www/idana139/data/www/dcentr.efremisdenov.ru/wp-content/uploads/2024/04/photo_11_2024-04-01_13-52-05.jpg.Файл был сжат с 177.65 KB до 153.56 KB, сохранив 13.56 процентов, с помощью WP-Optimize 
+[2024-04-01 10:59:12 : INFO] - Completed processing task with ID : 41, and type 'smush' 
+[2024-04-01 10:59:12 : INFO] - Lock option (updraft_lock_smush, wp_options) released 
+[2024-04-01 10:59:12 : INFO] - Successfully processed the queue (smush). 21 tasks were processed out of 21. 
+[2024-04-01 10:59:12 : INFO] - Lock option (updraft_lock_smush, wp_options) was deleted from the database 
+[2024-04-01 10:59:12 : INFO] - Cleaning up tasks of type (smush). A total of 21 tasks will be deleted. 
+[2024-04-01 11:08:55 : INFO] - 
+ 
+[2024-04-01 11:08:55 : INFO] - Header for logs at time:  Mon, 01 Apr 2024 11:08:55 +0000 on http://dcentr.efremisdenov.ru 
+[2024-04-01 11:08:55 : INFO] - WP: 6.4.3 
+[2024-04-01 11:08:55 : INFO] - PHP: 7.4.33 (cgi-fcgi, Linux s14.link-host.net 3.10.0-1160.95.1.el7.x86_64 #1 SMP Mon Jul 24 13:59:37 UTC 2023 x86_64) 
+[2024-04-01 11:08:55 : INFO] - MySQL: 5.5.68 
+[2024-04-01 11:08:55 : INFO] - WPLANG: ru_RU 
+[2024-04-01 11:08:55 : INFO] - Server: Apache/2.4.6 (CentOS) mpm-itk/2.4.7-04 OpenSSL/1.0.2k-fips PHP/5.4.16 
+[2024-04-01 11:08:55 : INFO] - Outbound connections: N 
+[2024-04-01 11:08:55 : INFO] - Disabled Functions:  
+[2024-04-01 11:08:55 : INFO] - max_execution_time: 30 
+[2024-04-01 11:08:55 : INFO] - memory_limit: 512M (used: 12.6M | 16M) 
+[2024-04-01 11:08:55 : INFO] - multisite: N 
+[2024-04-01 11:08:55 : INFO] - openssl: OpenSSL 1.0.2k  26 Jan 2017 

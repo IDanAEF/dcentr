@@ -2,16 +2,53 @@
     $imgPath = get_template_directory_uri().'/assets/images/';
 
     global $post;
+
+    $seoTitle = $seoTitle ?: get_bloginfo('name').' - '.(is_404() ? '404' : get_the_title());
+    $seoDescr = get_field('seo-description');
+    $seoKeyw = get_field('seo-keywords');
 ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php bloginfo('name'); ?> - <?=is_404() ? '404' : get_the_title(); ?></title>
+    <link type="image/png" href="<?=$imgPath?>favicon.png" rel="icon">
+    <link type="image/png" href="<?=$imgPath?>favicon.png" rel="shortcut icon">
+    <link type="image/png" href="<?=$imgPath?>favicon.png" rel="apple-touch-icon">
+
+    <title><?=$seoTitle?></title>
+    <meta name="og:title" content="<?=$seoTitle?>">
+
+    <?php if($seoDescr) : ?>
+        <meta name="description" content="<?=$seoDescr?>">
+        <meta name="og:description" content="<?=$seoDescr?>">
+    <?php endif; ?>
+
+    <?php if($seoKeyw) : ?>
+        <meta name="keywords" content="<?=$seoKeyw?>">
+    <?php endif; ?>
+
     <?php
         wp_head();
     ?>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdTBZspAAAAADp-m8OK-ERROAAhkHEkChxeSxkS"></script>
+    <script>
+        grecaptcha.ready(function () {
+            const setToken = () => {
+                grecaptcha.execute('6LdTBZspAAAAADp-m8OK-ERROAAhkHEkChxeSxkS', { action: 'check' }).then(function (token) {
+                    let captInput = document.querySelectorAll('input[name="recaptcha"]');
+                    
+                    captInput.forEach(inp => {
+                        inp.value = token;
+                    })
+                });
+            }
+
+            setToken();
+            setInterval(setToken, 90*1000);
+        });
+    </script>
 </head>
 <body>
     <header class="header">

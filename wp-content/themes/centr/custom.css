@@ -1,5 +1,57 @@
+.grecaptcha-badge {
+    visibility: hidden;
+}
+.works__promo .main__promo-title.title80 {
+    width: 100px;
+}
+/* .main__rucovod-person:last-child {
+    opacity: 0 !important;
+    visibility: hidden !important;
+} */
+.main__rucovod-person h5 img {
+    width: 956px;
+    transform: translate(-50%,-53%) !important;
+}
+.default-text p,
+.default-text h2,
+.default-text h3 {
+    margin-bottom: 15px;
+}
+.default-text a {
+    text-decoration: underline;
+}
+.default-text ul,
+.default-text ol {
+    margin: 15px 0px;
+}
+.single-news__navigate-arrow {
+    background: #986dce;
+}
+@media (max-width: 992px) {
+    .main__rucovod-person h5 img {
+        width: 622px;
+        transform: translate(-50%, -51%);
+    }
+}
+@media (max-width: 768px) {
+    .works__promo .main__promo-title.title80 {
+        width: 70px;
+    }
+    /* .main__rucovod-person:last-child {
+        display: none;
+    } */
+    .main__rucovod-person h5 img {
+        width: 573px;
+        transform: translate(-50%, -51%) !important;
+    }
+}
 @media (min-width: 576px) {
     .slider.mobile-only .slider-track {
         transform: none !important;
+    }
+}
+@media (max-width: 576px) {
+    .main__rucovod-person h5 img {
+        transform: translate(-50%,-39%) !important;
     }
 }

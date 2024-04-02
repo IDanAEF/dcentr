@@ -1,4 +1,4 @@
-<section class="main__reviews" class="reviews" id="reviews">
+<section class="main__reviews" class="reviews">
     <img src="<?=get_template_directory_uri()?>/assets/images/footer-cloud.png" alt="footer-cloud" class="main__rucovod-cloud">
     <div class="container">
         <img src="<?=get_template_directory_uri()?>/assets/images/reviews/review-image.png" alt="Отзывы" class="main__reviews-image">
@@ -17,10 +17,12 @@
                     <?php endif; ?>
                 <?php endif; ?>
                 <div class="main__reviews-audio">
+                    <?php if (have_rows('reviews_audio', 10)) : ?>
                     <div class="main__reviews-audio-watch">
                         Послушайте, что о нас говорят
                         <img src="<?=get_template_directory_uri()?>/assets/images/wave.svg" alt="wave">
                     </div>
+                    <?php endif; ?>
                     <?php
                         while(have_rows('reviews_audio', 10)) {
                             the_row();

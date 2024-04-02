@@ -20,7 +20,19 @@
                                     <?php
                                         foreach($list['list'] as $point) {
                                             ?>
-                                            <li><a href="<?=$point['document']?>" target="_blank"><?=$point['name']?></a></li>
+                                            <li>
+                                                <?php if ($point['document']) : ?>
+                                                <a href="<?=$point['document']?>" target="_blank">
+                                                <?php else: ?>
+                                                <span>
+                                                <?php endif; ?>
+                                                    <?=$point['name']?>
+                                                <?php if ($point['document']) : ?>
+                                                </a>
+                                                <?php else: ?>
+                                                </span>
+                                                <?php endif; ?>
+                                            </li>
                                             <?php
                                         }
                                     ?>

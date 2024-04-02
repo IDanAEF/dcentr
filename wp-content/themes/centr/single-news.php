@@ -9,7 +9,7 @@
     <section class="single-news__promo">
         <div class="container">
             <h1 class="text_fz90 text_fw700 text_black text_ffAmat text_animate"><?php the_title() ?></h1>
-            <div class="single-news__detail text_fw700 default-text">
+            <div class="single-news__detail default-text">
                 <?=get_field('detail')?>
             </div>
             <div class="single-news__date text_fw700">
@@ -24,16 +24,23 @@
                     $prev = get_previous_post(true);
                     $next = get_next_post(true);
 
+                    $prevThumb = get_field('image', $prev->ID)['sizes']['thumbnail'];
+                    $nextThumb = get_field('image', $next->ID)['sizes']['thumbnail'];
+
                     if ($prev) :
                 ?>
                 <a href="<?=get_permalink($prev->ID)?>" class="single-news__navigate-arrow">
-                    <img src="<?=get_field('image', $prev->ID)['sizes']['thumbnail']?>" alt="<?=get_the_title($prev->ID)?>" class="img_bg">
+                    <?php if ($prevThumb) : ?>
+                        <img src="<?=$prevThumb?>" alt="<?=get_the_title($prev->ID)?>" class="img_bg">
+                    <?php endif; ?>
                     <img src="<?=get_template_directory_uri()?>/assets/images/arrow-left.svg" alt="left" class="image">
                 </a>
                 <?php endif; ?>
                 <?php if ($next) : ?>
                 <a href="<?=get_permalink($next->ID)?>" class="single-news__navigate-arrow right">
-                    <img src="<?=get_field('image', $next->ID)['sizes']['thumbnail']?>" alt="<?=get_the_title($next->ID)?>" class="img_bg">
+                    <?php if ($nextThumb) : ?>
+                        <img src="<?=$nextThumb?>" alt="<?=get_the_title($next->ID)?>" class="img_bg">
+                    <?php endif; ?>
                     <img src="<?=get_template_directory_uri()?>/assets/images/arrow-right.svg" alt="right" class="image">
                 </a>
                 <?php endif; ?>

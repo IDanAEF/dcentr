@@ -6,6 +6,7 @@
     global $post;
 
     $imgPath = get_template_directory_uri().'/assets/images/';
+    $promoHide = get_field('promo-hide');
 ?>
 <main class="works">
     <section class="main__promo works__promo">
@@ -19,9 +20,15 @@
             <img src="<?=$imgPath?>main-arc-rec2-mobile.png" alt="main-arc-rec2-mobile" class="white mobile">
         </div>
         <div class="main__promo-images images images<?=$post->ID?>">
-            <img src="<?=$imgPath?>pages/image<?=$post->ID?>.png" alt="main-image1" class="girl elem_animate top">
+            <?php if(file_exists(get_stylesheet_directory().'/assets/images/pages/image'.$post->ID.'.png')) : ?>
+                <img src="<?=$imgPath?>pages/image<?=$post->ID?>.png" alt="main-image1" class="girl elem_animate top">
+            <?php elseif (!$promoHide): ?>
+                <img src="<?=$imgPath?>main-image1.png" alt="main-image1" class="girl elem_animate top">
+            <?php endif; ?>
             <?php if(file_exists(get_stylesheet_directory().'/assets/images/pages/image'.$post->ID.'-2.png')) : ?>
                 <img src="<?=$imgPath?>pages/image<?=$post->ID?>-2.png" alt="main-image2" class="boy elem_animate top">
+            <?php elseif (!$promoHide): ?>
+                <img src="<?=$imgPath?>main-image2.png" alt="main-image2" class="boy elem_animate top">
             <?php endif; ?>
             <img src="<?=$imgPath?>main-cloud.png" alt="main-cloud" class="cloud">
             <img src="<?=$imgPath?>main-cloud.png" alt="main-cloud" class="cloud cloud2">
